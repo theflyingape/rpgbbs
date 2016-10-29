@@ -1,0 +1,1095 @@
+
+
+
+
+
+
+
+
+                               RPGBBS Deluxe
+                           The Role-Playing Game
+                           Bulletin Board System
+
+
+
+           © Copyright 1996 Robert Hurst.  All Rights Reserved.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                DISCLAIMER
+                                ==========
+
+Micro  Wave  Software/Robert  Hurst  ("MWSOFT")  make no warranties, either
+expressed or implied, with respect to the information and computer software
+described  herein,  it's  quality, performance, merchantability, or fitness
+for  any  particular  purpose.  Such computer software and documentation is
+provided  on  an  "AS  IS"  basis.  The entire risk as to their quality and
+performance  is  with the LICENSEE.  Should the information and/or computer
+software  prove  defective,  the  LICENSEE  (and  not  the creator, MWSOFT)
+assumes  the entire cost of all necessary damages.  In no event will MWSOFT
+be  liable  for  direct,  indirect,  incidental  or  consequential  damages
+resulting  from any defect in the information and computer software even if
+it  has  been advised of the possibility of such damages.  Some laws do not
+allow  the exclusion of implied warranties or liabilities for incidental or
+consequential damages, so the above limitation or exclusion may not apply.
+
+                             Table of Contents
+                             =================
+
+                               Introduction
+
+                                The Basics
+
+                              Ability Ratings
+
+                             Character Classes
+
+                                 The Arena
+
+                              Bulletin Boards
+
+                            Deep, Dank Dungeon
+
+                               File Section
+
+                              Gambling Casino
+
+                                Naval Area
+
+                               Party Fights
+
+                                The Square
+
+                               Tiny's Tavern
+
+                               Other Options
+
+                             Becoming Immortal
+
+                               Installation
+
+                                  Server
+
+                                  Client
+
+                                   Sysop
+
+                               Introduction
+                               ============
+
+	The portly man with the bulging coin purse approaches with his two
+strong, but inexperienced-looking bodyguards.  Without so much as extending
+his hand, he speaks.
+
+	"So ye think ye want to be an adventurer, eh?" After scanning you
+over, he continues.  "Certainly don't look the type, all sissified and
+soft.  Ye'll be running for yer wetnurse soon enough, I'll warrant.  But if
+ye want to play with the big boys, ye've come to the right place.  Ye want
+to be rich, famous, an' powerful like the rest, don't ye?  Aye, else ye
+wouldn't be here.
+
+	Well, don't be thinkin' this is a cakewalk.  Ye'll be payin' yer
+dues, and there's plenty of 'em to be paid.  By the way, me name's Joe
+Mollicone.  Ye can call me 'Sir', or 'Mr.  Mollicone', or simply 'Taxman',
+that's what I does here, but don't let me catch ye badmouthin' me behind me
+back."
+
+	As he turns to leave, he shouts behind him.  "Personally, I don't
+think ye has what it takes.  Best to run yer yellow butt back to where it
+came from."
+ 
+	RPGBBS Deluxe is basically a bulletin board built around a medieval
+role-playing atmosphere (or is it the other way around?).  Though it has
+the standard BBS functions, such as a message base, file section, and
+e-mail, there are no online games.  Instead, you LIVE the online game as
+you kill, rob from, brawl, and joust the other members to gain levels and
+fortune.  The success of this game is dependent upon the users that play
+it.  Your involvment will not only provide you with entertainment, but also
+shares your activity with the other players.  Please take some time to read
+the ensuing sections and enjoy the game!
+
+
+                                The Basics
+                                ==========
+
+	The Taxman hears your footsteps behind him and turns.  "Didn't heed
+me advice, worm?  All right, but don't say I didn't warn ye.  There's some
+things ye need to know first if ye hope to make it here, not that I think
+ye will anyway."
+
+	Here are some tips worth knowing:
+
+	· Whenever a prompt asks for a username, you can enter a "?" for a
+	  listing by level.
+
+	· At prompts preceded by [MAX=], you can just type "max" rather
+	  than enter the entire amount.
+
+	· Defeating a Blessed user transfers their Blessing to you - you
+	  will receive +10 bonus points to all your character abilities
+	  (Strength, Intellect, Dexterity, and Charisma).
+
+	· Being defeated by a Cursed user will transfer the Curse to you
+	  and apply a -10 penalty to all your character abilities.
+
+	· Be sure to spend your money as soon as you get it.  The better
+	  your equipment, the more money you will get in the Dungeon.
+	  Hoarding gold might attract the Taxman.
+
+	· Jousting is a quick way to get some much sought-after cash,
+	  especially at the beginning.
+
+	· Do NOT swear anywhere on the system.  There are dire consequences
+	  to those that do.
+
+
+                              Ability Ratings
+                              ===============
+
+	"Aye, but ye're a weak one, ain't ye?  Ye better pu on some pounds
+before ye takes on the likes of me an' me men.  Oh, don't look so
+surprised, cur.  I'll be back around when ye get somethin' worth taxin'.
+And if yer some kind of treasonous scum who don't want to help keep this
+fine city runnin', ye'll have to cut through me an' the boys before
+enterin'."
+
+	Your abilities consist of Experience Level, Hit Points, Spell
+Power, Strength, Intellect, Dexterity, and Charisma.  Each is described
+below.
+
+	· Experience Level:  This indicates how powerful in your class you
+	  are.  You raise levels by gaining experience points for killing
+	  monsters and other users.  With each increase in level, you will
+	  gain more Hit Points, Spell Power (if used by your class), and a
+	  bonus to the four characteristics.
+
+	· Hit Points:  This measures a character's durability.  The more
+	  Hit Points you have, the more damage you can take.  When your Hit
+	  Points are down, you can raise them by visiting Butler Hospital,
+	  gaining an experience level, or casting Heal or Cure.  Each time
+	  you log on your Hit Points are restored to full.
+
+	· Spell Power:  This is how much magical energy a character has at
+	  their disposal.  If the character class uses spells or scrolls,
+	  there will be an accompanying Spell Power requirement for casting
+	  each.  Those classes that use wands do not have to expend any
+	  force to invoke them.
+
+	· Strength:  This tracks how hard a character hits.  Characters
+	  with higher Strength gain more Hit Points when advancing in
+	  Experience Levels.  More Strength yields more damage in melee
+	  attacks.
+
+	· Intellect:  This statistic comes into play mainly in casting and
+	  resisting magic.  It is also calculated into approximating an
+	  opponent's Hit Points.  Bonus Spell Power is awarded to those
+	  with a high Intellect upon gaining a level.
+
+	· Dexterity:  Your overall fighting ability is measured by how
+	  dexterous you are.  It is used to calculate who gets the first
+	  attack in a battle round, whether a hit was made, jousting
+	  ability, and in other applicable instances.
+
+	· Charisma:  A high Charisma will get you more money when selling
+	  items in the Square and from defeated foes.  Some of the random
+	  events that occur tend to favor those with a high Charisma as
+	  well.
+
+
+                             Character Classes
+                             =================
+
+	"Ye'll be needin' to choose a profession that ye want to pursue
+here as well.  From the looks of ye, I'd recommend shovellin' manure, but
+that ain't one of yer options.  Ye'll just have to find one ye might not be
+TOO incompetent in."
+
+	Character classes define the nature and tendencies of a character.
+Some may hit for more damage, such as the Barbarian, but must pay a higher
+price to use magic.  Others may be able to weave intricate spells, but are
+poor in physical combat.  Each is listed below, with an explanation of
+benefits and shortcomings.
+
+	· Alchemist:  This character is a master of using poison, getting a
+	  4x bonus when using it on his weapon.  Alchemists receive an
+	  extra Intellect point when gaining a level.  Advantages:  Can buy
+	  poison cheaply and do a great deal of damage when using it.
+	  Disadvantages:  Can not buy any magic at all, poor combat
+	  abilities without poison.
+
+	· Assassin:  This character class is similar to a ninja in
+	  abilities, making him a worthy opponent.  Assassins gain an extra
+	  Dexterity point upon gaining a level.  Advantages:  Can use
+	  poison well, and generally gets a backstab.  Disadvantages:  Must
+	  purchase expensive wands.
+
+	· Barbarian:  This is the strongest combat-class fighter in the
+	  game, but most susceptible to the effects of magic.  A
+	  Barbarian's hitting power grows as he gains more experience;
+	  there will be a point when he can hit for as many points
+	  barehanded as with weapons.  Barbarians gain +1 Strength point
+	  per level.  Advantages:  Very hard hitter.  Disadvantages:  Poor
+	  magic resistance, must buy wands.
+
+	· Bard:  This class is a jack-of-all trades, an entertainer.  Bards
+	  gain an extra Charisma point per level.  Advantages:  Can do it
+	  all.  Disadvantages:  Can not do any of it WELL.
+
+	· Cleric:  These devout fellows have good magic and combat
+	  abilities.  And extra Charisma point is awarded with each level.
+	  Advantages:  Normal use of magic spells, can possess very high
+	  Charisma.  Disadvantages:  Poor Dexterity, poor poison use.
+
+	· Fighter:  A one-man killing machine.  Fighters gain an additional
+	  point to their Stamina when gaining a level.  Advantages:  Tough
+	  opponents.  Disadvantages:  Poor poison use, must purchase wands.
+
+	· Jester:  The best term used to describe this class is "annoying
+	  pest." Though their combat ability is sorely lacking, they are
+	  great at dodging blows.  Jesters receive a bonus Charisma point
+	  upon gaining a level.  Advantages:  Use spells, can backstab,
+	  good robbing ability.  Disadvantages:  Ineffective poison use,
+	  weak combatant.
+
+	· Magician:  This is the magical counterpart of the fighter -
+	  strong magical abilities, but weak in physical combat.  Magicians
+	  gain a bonus point to Intellect per level.  Advantages:  Use
+	  spells well.  Disadvantages:  Ineffective poison, weak
+	  physically.
+
+	· Ranger:  These specialty-fighters have a number of abilities.
+	  Rangers gain an extra Stamina point when they gain a level.
+	  Advantages:  Use scrolls, can hit fairly well.  Disadvantages:
+	  Cannot use poison, does not excel in a particular area.
+
+	· Rogue:  This class is similar to a Thief, but do not specialize
+	  in one ability.  Rogues are awarded an extra Charisma point when
+	  gaining a level.  Advantages:  Use scrolls well, good backstab,
+	  good robbing ability.  Disadvantages:  Ineffective poison use,
+	  poor physical combat.
+
+	· Sage:  Though this class is the weakest in physical combat,
+	  Sages' spellcasting ability rivals that of a God-class.  Sages
+	  gain an extra Intellect point when gaining a level.  Advantages:
+	  Super-powered magic.  Disadvantages:  Ineffective poison use,
+	  poor stamina.
+
+	· Thief:  The Thief uses his stealth abilities to sneak in his
+	  deadly backstab.  Thieves, accordingly, also have the best chance
+	  of robbing.  This class gains an extra Dexterity point every
+	  level.  Advantages:  Great backstab, good poison use, excellent
+	  robbing ability.  Disadvantages:  Uses wands, weak regular
+	  attacks, poor Charisma.
+
+	The Paladin, Titan, and God classes are described in section
+Becoming Immortal.
+
+
+                                 The Arena
+                                 =========
+
+	"Think ye're a force to reckon with, do ye?  Well, the monsters and
+your fellow grubs will put ye back in yer place, that I assure ye.  Better
+stick to somethin' safe, like joustin'...  or needlepoint!"
+
+	The arena is the proving grounds, where you test your mettle
+against monsters and other users.  It is relatively safe, as you can
+retreat at any time, but do not get too complacent - if you wait until you
+are too far down on Hit Points you may get killed by a powerful blow before
+you can escape.  You can do battle against other users here by typing "U"
+and providing the levels you want listed.  You can only fight someone
+higher than or up to three levels below you.  If you win, you receive
+experience points, any money they might have in their hand, and their
+Blessing, if they have one.  You will also get their armor and weapon (if
+it is better than yours).  If you are killed, however, your opponent may
+take your better weapon and/or armor.
+
+	When you kill a user, they will remain dead until either they log
+on again or are Resurrected.  If you kill a user of higher level than you,
+they will only be worth the experience points of your level until they log
+on again.  For example, you kill a level 25 Fighter when you are at level
+18.  If that player becomes Alive!  again, the attacker that kills him
+again, in the interim, will only gain level 18 experience points.
+
+	Several semi-intelligent denizens like to compete for cash and
+prizes as well.  When doing a Monster Fight, start at the bottom and work
+your way up slowly.  You may do up to three Monster or User Fights per call
+(or any combination thereof).
+
+	The Arena also features a jousting field.  Here you enter a
+best-of-five-passes match against a user you specify.  Each win increases
+your Joust Status by two points, each loss decreases it by one point.  If
+you win, you will get a set amount of money, determined by the Experience
+Level of your opponent.  If you lose, your opponent receives the money for
+your level.  You will also gain Joust Status points upon gaining a level.
+You may joust up to three times per call.
+
+	You can also cast a non-combat spell and poison your weapon here to
+ready yourself for battle.  In addition to this, you may type "Y" to bring
+up a mini-status screen.  There is even an alley that leads to the Square,
+but be forewarned - another user may "accidentally bump" you and pick your
+pocket here.
+
+
+                              Bulletin Boards
+                              ===============
+
+	"No man be an island, though Tiny is gettin' close to the size.  A
+sissy like yerself will do best to stay in one of these safe areas.  The
+King likes to see his subjects talkin' to each other, so ye best get in
+there and converse with yer fellow vermin.  If ye don't, I'll be collectin'
+a Silence Tax every time ye visit!"
+
+	This is your standard message base.  If the sysop opts to set a
+post-to-call ratio (one message must be entered per set number of calls),
+you must abide by it or be taxed the difference between your post-to-call
+ratio and the required ratio automatically upon logon.  BBS etiquette
+prohibits entering messages stating, "I'm just posting this to boost my
+ratio." If there is no existing sub that interests you, suggest one that
+would to the sysop.
+
+	To read the messages, simply select a sub's number upon entering
+this area.  Those preceded by an asterisk are ones that contain unread
+messages.  Select "N" to read all new messages, "F" to read a sub's first
+message, "L" to read the last message posted, and "P" to read the messages
+in reverse order.  Note that if you hit "L" before reading new messages
+within a sub, your pointer (kind of an electronic bookmark) will be reset
+to the last message - you will have to hit "P" to scan all previous
+messages until you hit those you have already seen.
+
+	You can enter a message in one of two ways.  Selecting "E" after
+entering a sub will allow you to post.  If you are scanning messages, you
+will have the option of using "R" to reply to a particular message, either
+publicly (in the message base) or privately (via e-mail).  When you opt to
+enter a message, you will be asked to provide an addressee of the message,
+or just hit the Return key to have it addressed to All.  The BBS will
+automatically supply who the message is from and the date/time.  If you
+address a message to a specific user, that user will be notified at logon
+that they have a message waiting.  Then you will be in the BBS message
+editor - just type away, and when you are done, type either /s on a blank
+line to save it, or /q to abort it.
+
+
+                            Deep, Dank Dungeon
+                            ==================
+
+	"If ye want a REAL challenge, go kill some monsters in the Dungeon
+- that's where the real money lies.  If ye're not scared, that is.  Best
+watch out, though, 'cuz there's plenty of surprises to trip ye up.  And if
+ye run into another limp-livered coward like yerself down there, he's like
+to mistake yer ugly face for a monster and attack.  Maybe ye'll even find
+the Legendary Wishin' Well down there, but ye'd probably mistake it for a
+chamberpot."
+
+	When you enter the Dungeon, you will start on the floor one higher
+than your Experience Level.  Each mazelike level will vary in size; the
+lower you go, the possibility of a larger floor size.  Do not bother
+keeping maps, as each level is randomly generated each time you enter.  The
+top half of your screen holds a top-view of the current dungeon floor.  The
+player's position is highlighted as -YOU-.  The bottom half of the screen
+is for a rolling, text display.  The prompts will guide the player along
+their adventure.  Please note that the dungeon will accept most cursor keys
+as a substitute for the directions, North, South, East, West.
+
+	The Dungeon is filled with monsters to slay, most of them
+commensurate in might to the Dungeon level.  On occasion, though, a more
+powerful creature will work its way up to one of the higher levels, so
+watch out.  Sometimes you will find another user on the Dungeon level
+matching their Experience Level.  Some monsters keep maps of the Dungeon
+level they are on.  If you find one, you will be able to display all rooms
+on that level.  If your Intellect is above 50, you will be able to keep a
+map of all the rooms you have been in.  A key follows:
+
+	· Mon:  A room inhabited by a monster.
+
+	· Mob:  A room inhabited by a mob of monsters!
+
+	· ?:  Unknown.
+
+	· (Clr):  The Cleric, who can heal your wounds (for a price).
+
+	· (Wiz):  The Wizard, which will allow you to teleport out of the
+	  Dungeon, up or down a level, or randomly teleport to a room on
+	  the current Dungeon level.
+
+	There are many other items you can find as well.  Potions of all
+types, as well as wands and scrolls, can be found in empty chambers and
+hidden caves.  But beware:  sometimes a monster or an armor-spoiling bat
+may be lurking in the shadows of these "safe" rooms too.  Some monsters
+might even possess weapons that can not be purchased in the Square.  These
+Weapons or Armor may be cursed or have an ego, giving them unique powers.
+
+	Pay attention to the directions available to go in the Dungeon.
+Running into a wall will cause damage to your Hit Points.  Your options
+will be available right beside the prompt.
+
+
+                               File Section
+                               ============
+
+	"Ye'll do just fine to visit this area as well - ye won't get hurt
+in it!"
+
+	When you enter the File Section, you must select an area from those
+available as you did in the Bulletin Boards.  You can then list the files
+in that area and download one using Xmodem, Zmodem, or Kermit protocols.
+Uploads must go to a special Uploads directory to be reviewed by the sysop
+before they are made available to the public.
+
+
+                              Gambling Casino
+                              ===============
+
+	"Short on cash, are ye?  Well, the gods tend to smile on the
+foolish, so you should stand a good chance.  Maybe ye'll even win the
+Monster Jackpot - and I'm sure ye'll be willin' to fork over the city's
+share to me."
+
+	In addition to Blackjack, Craps, Dog Racing, High Card, Keno,
+Roulette, and the Slots, you can also deposit or withdraw money via the
+Instant Cash Machine.
+
+
+                                Naval Area
+                                ==========
+
+	"No, this area don't deal with yer bellybutton, knave.  We're
+talkin' ships here.  Get yerself a REAL ship instead of that little dinghy
+an' ye might be able to bring back a seamonster carcass an' sell it.  Or ye
+can do battle against another mangy cur like yerself and lay claim to their
+booty.  But if ye think ye'll be doin' some fishin' for relaxation, think
+again!"
+
+	In the Naval Area, you must first visit the Shipyard to buy a boat
+once you have saved up enough money.  You can then arm it with a ram and
+one cannon per 50 Hull Points.  Once you have made your purchase, you can
+hunt either denizens of the deep or other users.  Hitting "L" will display
+which users have ships, as well as how powerful those ships are.  Each time
+you log on your Hull Points are restored, though lost Hull Points can be
+repaired in the Shipyard during the same call.
+
+	From this menu you can also fish, which will yield some interesting
+results.  I will not spoil the fun by telling you everything that can be
+caught, but the higher your Charisma, the better chance you have of
+catching beneficial items.  You will, on occasion, catch oysters - the
+value of their pearls are based directly on how many cannons your ship has.
+
+
+                               Party Fights
+                               ============
+
+	"There's strength in numbers, but four cowardly gnats like yerself
+still won't amount to much.  Others got the same idea, an' they'll be more
+than happy to show ye THEIR strength.  If ye think yer gang's tough enough,
+take on the Monster Mash an' see how some REAL partyin's done!"
+
+	To get in on Party Fights, you must either join an existing gang or
+start one of your own.  To see if there are any openings, select "L" to
+list all gangs.  Any that have slots saying "-empty-" are available for
+your membership.  Alternately, a gang leader may invite you into a party -
+you will receive the invitation in your notes when you log on.  Listing
+gangs at this point will show your handle with (Invited) after it in the
+party into which your presence has been requested.  You may want to check
+the Most Wanted List to ensure that the gang you are about to join does not
+have a past history of taking a beating on a regular basis.  You may resign
+from a gang, if you have not used your party fight that call.
+
+	If you would like to form your own Party, simply select "S".  You
+will then be asked to supply a name for your gang.  Once that is complete,
+you can edit the gang, inviting potential teammates.  Do not invite users
+that are already in a gang - chances are slim they will leave theirs for
+yours.  The perfect gang combination consists of a heavy-hitter (Barbarian,
+Fighter, or Ranger), poison-using class (Alchemist, Assassin, Thief),
+magic-using (Sage, Magician, Cleric, Jester), and jack-of-all-trades (Bard
+or Rogue).  Keep this in mind when selecting other members.  If you do not
+invite specific users into the gang, any user has the option of joining.
+
+	As gang leader, you may have the option to replace undesirables at
+any time.  If you would like to put someone else in charge, you can use "T"
+to Transfer Leadership.  Note that if a member of your Party kills you,
+that person automatically assumes leadership.
+
+	Any of the four, possible members that have joined the gang may
+initiate combat with another Party.  Only gang members with Alive!  status
+can participate in the gang battle.  Any time another Party is defeated,
+the victors divide the spoils (based on Experience Levels) of all money
+that was in the losing gang members' hands.  If the defeated gang was
+powerful enough, you will also gain a level.  Be sure to use "Y" to check
+your statistics during battle, and keep in mind that discretion is indeed
+the better part of valor - if your Party is defeated, you will be logged
+off.  If you are defeated during the fight, your call will only continue if
+you go up an Experience Level and receive more Hit Points.
+
+
+                                The Square
+                                ==========
+
+	"Ye'll need to be doin' some shoppin' if ye stand a chance of
+survival.  Not a high one, mind ye, but a chance.  Of course, once ye get
+some coinage saved up, I expect ye'll be doin' yer part to keep this fine
+city runnin'!"
+
+	The Square is your character's online shopping mall.  The Armory
+and Weapon Shoppe allow you to buy and sell the tools of your trade.  Here
+is a complete list of items:
+
+Dart			1c		Wooden Shield		5c
+Sling			2c		Small Shield		10c
+Dagger			5c		Large Shield		50c
+Staff			10c		Leather			100c
+Club			25c		Padded Leather		500c
+Hammer			50c		Studded Leather		100c
+Mace			100c		Ring Mail		5000c
+Flail			250c		Scale Mail		10000c
+Spear			500c		Chain Mail		1s
+Axe			1000c		Splint Mail		5s
+Harpoon			2500c		Banded Mail		10s
+Short Bow		5000c		Bronze Plate Mail	50s
+War Hammer		10000c		Normal Plate Mail	100s
+Battle Axe		25000c		Field Plate Armor	500s
+Light Crossbow		50000c		Full Plate Armor	1000s
+Javelin			1s		Dancing Shield		5000s
+Short Sword		2s,50000c	Dragon Scale Mail	1g
+Long Bow		5s		Elfin Chain Mail	10g
+Long Sword		10s		Minthral Plate Armor	100g
+Heavy Crossbow		25s		Cloak of Elvenkind	500g
+Scimitar		50s		Robe of Blending	1000g
+Pole Arm		100s		Adamantite Plate Mail	5000g
+Broad Sword		250s		Cloak of Displacement	1p
+Trident			500s		Cube of Force		5p
+Two-Handed Sword	1000s		Ring of Invisibility	10p
+Gloves of Strength	2500s
+Dart of Homing		5000s
+Sling of Seeking	1g
+Dagger of Venom		2g,5000s
+Staff of Striking	5g
+Hammer of Throwing	10g
+Mace of Disruption	25g
+Axe of Hurling		50g
+Hammer of Thunderbolts	100g
+Axe of Lords		250g
+Crossbow of Distance	500g
+Sword of Quickness	1000g
+Arrows of Slaying	2500g
+Sword of Sharpness	5000g
+Crossbow of Accuracy	1p
+Scimitar of Speed	2p,5000g
+Sword of Wounding	5p
+Trident of Submission	10p
+Vorpal Sword		25p
+Wand of Wonder		50p
+Rod of Smiting		100p
+Sword of Life Stealing	250p
+Wand of Lightning	500p
+Ring of Shooting Stars	1000p
+Staff of the Magi	5000p
+
+	Real Estate and Security are very important - they help to keep you
+from getting robbed by other users.  Here is a complete list of items:
+
+Cardboard box		100c		Baseball bat		100c
+Cave			1000c		Boulder			1000c
+Stable			10000c		Fence			10000c
+Shed			1s		Padlock			1s
+Shack			10s		Dead bolt lock		10s
+Barn			100s		Trip wire trap		100s
+Hovel			1000s		Barbed wire fence	1000s
+Cabin			1g		Dog			1g
+Room above tavern	10g		Shotgun			10g
+House			100g		Stone wall		100g
+Mansion			1000g		Burglar alarm		1000g
+Tower			1p		Security guard		1p
+Castle			10p		Moat			10p
+Palace			100p		Garrison		100p
+Fortress		1000p		Magical barrier		1000p
+
+	And you will probably be paying more than a few visits to the
+Butler Hospital, where you can heal your wounds for a small fee.  If you
+cannot afford to heal all your Hit Points, the Hospital will sympathize and
+take a loan out for you from the Bank.  You can try to Pick Pockets in this
+busy sector, if you are careful not to get caught by the city guard.  And
+you can take the alley leading to the Arena.
+
+	In the Mages Guild, you can buy magical wands, scrolls, or spells,
+depending on which your class uses.  As more energy must be expended to
+create wands, they cost considerably more and may become inoperative after
+each use.  Scrolls are cheaper, but may also be consumed in the casting as
+are wands.  If your class is fortunate enough to use spells, you only need
+to buy each once and it will stick with you until you reach Immortality.
+Each spell is described below.
+
+	· Charisma, Intellect, Strength, Dexterity:  Each of these will
+	  temporarily raise each respective ability from one to ten points
+	  each time it is cast, to a maximum of their class allows.
+
+	· Shield, Hone:  These will augment your weapon and armor.  Be
+	  careful not to augment them too much!
+
+	· Teleport:  This spell replaces the Wizard in the Dungeon.  It can
+	  also be cast as a defensive, escape measure in battle.
+
+	· Heal, Blast:  These are used to restore lost Hit Points or cause
+	  an opponent to lose some.
+
+	· Resurrect:  This spell will bring a dead user back to life so
+	  they can be killed again.
+
+	· Confusion:  This will distract your enemy in battle, making them
+	  miss and their spells fail more often.
+
+	· Transmute:  This spell will permanently change your opponent's
+	  weapon to something of lesser value.
+
+	· Cure:  This spell will restore ALL lost Hit Points.
+
+	· Illusion:  This spell will summon an ally of the same qualities
+	  of the caster.
+
+	· Disintegrate:  This will completely atomize your opponent.
+
+	· Morph:  This spell, which can only be cast in battle, will
+	  randomly change your opponent's character class and level.  Note
+	  that you could make him more powerful, a God class, or force an
+	  extermination, a class of None.
+
+	All spell-casting attempts are subject to failing or even
+backfiring.
+
+	The Apothecary sells poison, which will enhance your blade in
+battle.  The more expensive the poison, the better the damage, though some
+of the lesser weapons can not hold a good dose of the better poisons.
+Classes unfamiliar with the use of poison must pay extra for a special
+blend which has been magicked to adhese to the blade, while those very
+familiar with the application of poison may be able to get several doses
+out of one small vial.  The Apothecary has preconceived notions about
+certain classes, however, and will not sell poison to certain character
+classes for fear of being reported to the authorities.
+
+	Ye Olde Stone Bank is a relatively safe place to store your excess
+cash, though it has been known to be robbed on occasion.  When you are
+short on cash, the banker may even see his way clear to grant you a loan
+based on your Real Estate and Security assets.  If you are feeling lucky,
+you can try to Rob the Bank, but the chance is very slim, as the Bank hires
+the best of security.
+
+
+                               Tiny's Tavern
+                               =============
+
+	"I'll let ye go in and check this out for yerself.  Tiny an' me's
+not on the best of terms."
+
+	You enter the Tavern and are amazed by the size of the barkeep - he
+must stand over seven feet tall.  His appearance - and abnormal height -
+lead you to believe that human blood is not the only type flowing through
+his veins.  He finishes drying a flagon, places it with several others, and
+makes an adjustment to the sword hanging above his mantle.  He then turns
+toward you and speaks.
+
+	"New customer, huh?  OK, here's the rules, and I'm only gonna tell
+ya once, punk.  There's some rough-housing that goes on here, so I'll
+letcha get away with three brawls.  A lotta loose talk breezes through
+here, so you'll wanna keep your ears cocked as well.  If you wanna keep up
+on what's going on in the world, I keep a couple of newspapers lying around
+here to read.  He points a meaty finger at a chart on the wall and
+continues.  "Other people put bounties on the ones that done them wrong.
+You can put up one of your own, chalk's right there on the sill.  Me, I've
+seen it all working here - gimme a decent tip and I'll give ya one right
+back.  But you'd best watch your mouth, punk, or I'll take ya down a notch.
+I can stand a little abuse, but some things I just don't tolerate." With
+that, he flexes a mighty bicep and continues his cleaning.
+
+	In the Tavern, you can Brawl another user of higher or up to three
+levels below you.  If you win, you receive one third of the experience
+points for killing them and any money in their hand.  If you lose, your
+opponent will get the same, and you will be knocked unconscious for
+anywhere from one to ten minutes.  Watch out for those wild punches - your
+enemy may duck and you will hit an unintended target, who may in turn join
+in the fracas.
+
+	You can also listen to or join in the arguments going on here.  A
+log is kept of the current and previous days' activities for your review.
+Or you can have an ale and talk to Tiny, who may have some good advice for
+you.  You can also vent frustrations by Swearing at Tiny, but do not make a
+habit of it or the consequences could be dire.
+
+	If you want to exact revenge on someone, but they are too high or
+low a level for you to do it personally, you can post a Bounty on them,
+offering an added incentive for another player to do your dirty work.
+There can only be one active Bounty on a user at any given time.  Once
+another user kills the person you had a Bounty on, they receive your posted
+cash.  If you kill the user that you had a Bounty on, it is lifted.
+
+
+                               Other Options
+                               =============
+
+	"There's some other things ye can do here too, so don't let me
+catch ye sittin' around not doin' anythin'.  Ye got two minutes on the
+sundial to make a decision, then ye'll be escorted to the city limits for
+malingerin'."
+
+	The following lists options from the Main Menu not previously
+covered.
+
+	<C> Chat With the Sysop:  This will page the sysop, indicating you
+would like to enter chat mode.  Also, do not use this option more than once
+or twice per call - the gods frown on those who page excessively.
+
+	<E> Electronic Mail and Feedback:  This command allows you to send
+a private message to another user or the sysop.
+
+	<L> List of Users:  Fame & Lame allows you to display the list of
+users that have obtained the best scores in several categories.
+
+	<M> Most Wanted List:  This command will display the top users in
+descending order of level.
+
+	<R> Rob/Burglarize Other Users:  By using this command you can
+attempt to steal money from another user.  When you do, their possessions
+will be slightly downgraded.  There is a chance that the user robbed from
+will be informed who did the deed.  The better the real estate and security
+of your target, the longer it will take for you to break in, and the better
+the chance the city guard will catch you in the act.
+
+	<U> User Configuration:  This allows you to change your terminal
+emulation, number of rows displayed, and password.  You can also toggle
+Expert Mode, which will suppress menu display.
+
+	<X> X-terminate:  This option will reset your character and allow
+you to select a new class.  Note that you do not get credit for this type
+of reroll, and if used as an Immortal class, you will lose the option of
+selecting that class again.
+
+	<Y> Your Statistics:  This displays in-depth character information.
+A secondary screen is also shown that informs you how close you are in the
+Hall of Fame for both Character Class and All-Time categories.  For an
+amount of money based on your level, you can Hire a Scout to show the
+character statistics for another user.
+
+	<Z> System Status:  This area displays registration info.
+
+
+                             Becoming Immortal
+                             =================
+
+	"Ye really think ye can make it to God status?  I doubt ye can even
+make it to Paladin.  I've seen a lot smarter than ye fail, jellyfish."
+
+	Your ultimate goal on RPGBBS Deluxe is to work your way through the
+Immortal classes, Paladin and Titan, and make it to God status.  If you
+reach level 100 God, you win the game and the board is reset.  Descriptions
+of each follow.
+
+	· Paladin:  This class is the lowest of the superbeings, combining
+	  a Ranger's combat skills with a Bard's use of scrolls, and an
+	  Assassin's use of poisons and backstab.  Their robbing ability is
+	  fair as well.
+
+	· Titan:  This class has a Fighter's skill with a Magician's
+	  spellcasting ability.  They use poisons, backstab, and rob very
+	  well.
+
+	· God:  This class combines a Barbarian's strength, a Sage's
+	  spellcasting power, a Thief's backstab and robbing abilities, and
+	  an Alchemist's use of poison.
+
+	All Immortals gain two points in each ability as they gain an
+Experience Level.
+
+	To advance to the Immortal classes, you must successfully solve the
+Riddle of the Keys.  When you reach Experience Level 100 in any class, you
+will be presented with a locked doorway, and given four keys - platinum,
+gold, silver, and copper.  If you have made the Hall of Fame in any area,
+you will be given a Key Hint, such as "Key #2 is not silver".  You must
+then supply which key you will try in the lock.  If you guess correctly,
+you will be rewarded with a {Click!} and are advanced to Paladin class.  If
+not, a ^BOOM!^ and you will be rerolled and must select from the lesser
+classes..  To attain Titan class, you must unlock the second doorway as a
+Paladin; to become God class, you must unlock the third doorway as a Titan.
+
+	The Taxman escorts you back to the city gates.  "That's it for yer
+tour, mongrel.  I hope ye enjoyed it.  I'm sure I'll be seein' ye again
+real soon," he says in parting, patting his coin pouch.
+
+
+                               Installation
+                               ============
+
+	RPGBBS Deluxe requires a minimum of an Amiga computer using version
+2 operating system with 1-megabyte of available RAM.  A Hayes-compatible
+modem is required to allow remote users to logon and play.  The program
+itself can run on a dual-floppy system, but a hard disk is required to
+handle the storage needs for multiple message and file sections.  About
+512k of extra RAM is required per additional client.  A color monitor and
+audio speakers are recommended, but are not necessary.
+
+	All programs were written in SAS/C, utilizing shared libraries and
+event-driven processing.  This makes the BBS operation very
+system-friendly.  Installation is simple.  Just double-click the
+InstallerScript icon and follow the prompts.  The following is a listing of
+files that get placed on your system disk:
+
+	· Fonts.  Two PC-8 compatible fonts are supplied for use with the
+	  console, IBM and Venus.  IBM style offers a traditional look
+	  while Venus suggests a more medieval feel.
+
+	· Libs.  btree.library is a custom database handler for the various
+	  files used by the server.  iff.library is used to help convert
+	  iff brushes into a custom pxl-format.  rpgbbs.library contains
+	  console emulation and other common functions used by server,
+	  client, and utilities provided.  xemrpgbbs.library is an external
+	  emulation module for terminal programs that support such
+	  extensions (like the PD program Term).  xprkermit.library,
+	  xprxmodem.library, and xprzmodem.library are public domain file
+	  transfer protocols, so refer to their documentation files for
+	  complete information.
+
+	The following files are included in your RPGBBS directory:
+
+	· RPGBBS.access holds user access information.  This file can be
+	  modified to suit your tastes.
+
+	· RPGBBS.arena lists the various arena monsters that can be battled
+	  in place of a user fight.
+
+	· RPGBBS.armor contains armor class tables.  Each table has an
+	  origin and items within each origin.  The default origins are
+	  Square, Dungeon, and Naval.
+
+	· RPGBBS.class contains character class tables.  Each table has an
+	  origin and character types within each origin.  The origins
+	  supplied are Public, Immortal, Dungeon, and Tavern.
+
+	· RPGBBS.dungeon lists the 100-supplied creatures that can be
+	  encountered.
+
+	· RPGBBS.license holds registration information.
+
+	· RPGBBS.magic itemizes the names, costs, and power required of the
+	  spells used.
+
+	· RPGBBS.naval lists the various sea monsters that can be hunted in
+	  place of a naval fight.
+
+	· RPGBBS.paths identify the disk pathnames to be used by
+	  RPGBBSclient.  Each pathname can be up to 40-characters.  If more
+	  is required, use a logical assigned to the destination path.  The
+	  pathnames are defined in the following order:  email, bulletins,
+	  notes, uploads, # of file sections (1-16), file section name #1,
+	  file section path #1, etc.
+
+	· RPGBBS.poison itemizes the names and costs of the different vials
+	  of poison types.
+
+	· RPGBBS.realestate lists the types of Real Estate that can be
+	  purchased in the Square.
+
+	· RPGBBS.security lists the types of Security that can be purchased
+	  in the Square.
+
+	· RPGBBS.weapon contains weapon class tables.  Each table has an
+	  origin and items within each origin.  The default origins are
+	  Square, Dungeon, and Naval.
+
+	These files are created in the RPGBBS drawer when the game is in
+use:
+
+	· GANG.master is a B-tree file holding the related party members.
+
+	· RPGBBS.callers tracks the last three callers to the system and
+	  why they logged off.
+
+	· RPGBBS.hof holds the Hall of Fame records by the individuals who
+	  broke them.
+
+	· RPGBBS.hol holds the Hall of Lame records by the individuals who
+	  broke them.
+
+	· USER.master is a fixed-length, random file that grows as more
+	  players sign-up.  It is keyed by the following B-tree files.
+
+	· USERID.index is a B-tree file that allows random access to each
+	  player's record.
+
+	· USERLEVEL.index is a B-tree file that keeps track of each
+	  player's level.  This makes lists by levels retrieve much faster.
+
+	· USERNAME.index is a B-tree file that keeps track of each player's
+	  handle, so one player can search for another by typing in the
+	  whole handle.
+
+	These files are created in the Notices drawer when the game is in
+use:
+
+	· Announcement holds a message from the Sysop that is displayed
+	  upon user logon.
+
+	· Auto-Message holds a message from a user and is displayed upon
+	  every logon.
+
+	· CallerID is a message that gets displayed if the caller id
+	  feature was enabled, but the logon could not be identified.  The
+	  player is allowed to continue, but he can not interact with the
+	  other users.
+
+	· Intro is a custom message from the Sysop.  It gets displayed
+	  after a new user completes the registration form.
+
+	· Logoff is a banner that is displayed when the user logs off.  An
+	  ANSI version of this file, named Logoff.IBM, can be used as well.
+
+	· Logon is a banner that is displayed before the user logs on.
+
+	· Tavern is the arguments held at the local pub.
+
+	· Today contains today's player activity and can be read from
+	  Tiny's Tavern.
+
+	· Yesterday is yesterday's newspaper, renamed from Today.
+
+	The disk labeled PIX can optionally install the Pix drawer, which
+contains text, ANSI, and PXL-graphic files of the various characters and
+creatures the players will encounter.  The disk labeled EXTRA contains IFF
+sound effects that get played in Local mode only.  It also has a
+Documentation drawer containing various read-me files.
+
+
+                                  Server
+                                  ======
+
+	The program, RPGBBSserver, is required to run before any clients
+attempt to connect with it.  Typically, a script is used in your WBstartup
+drawer to run RPGBBSserver, like the following example:
+
+echo "Booting RPGBBS Deluxe..."
+cd RPGBBS:
+RPGBBSserver
+wait 5 ;allow it some time to init & load files
+echo "Booting Client..."
+run >nil: RPGBBSclient Modem#1
+
+	The server reads its icon file, RPGBBSserver.info, for Tool Type
+options.  To modify these options, click on the icon once and press
+Right-Amiga I, for Workbench's Icon Information utility.  Once there, you
+can edit the following Tool Types:
+
+	· RPG=(BBS, DOOR).  Running the server in BBS mode will create a
+	  public screen for all the clients to attach their windows to.
+	  DOOR mode will boot quietly in the background.
+
+	· Mode=(screen mode request).  Allows you to select a suitable
+	  video mode your monitor can display.  If this option is missing,
+	  an ASL screen request will prompt you for an appropriate screen
+	  mode.
+
+	· Depth=(3,4,5,8).  Select a screen depth.  3 (8-colors) is
+	  typically used by Amigas using the original 68000 Motorola
+	  processor, such as A1000, A500, A600, and A2000.  This opens a
+	  monochrome screen, which supports bold, dim, and blink
+	  attributes.  4 (16-colors) can be used by accelerated Amigas,
+	  such as A3000.  This opens an ANSI-color screen, but does not
+	  support blink.  5 (32-colors) is for AGA chip sets only, such as
+	  those found in A1200 and A4000.  This, too, opens an ANSI-color
+	  screen, but it supports the blink character attribute.  8
+	  (256-colors) can be used by retargetable graphic boards, like
+	  Picasso-II, for speed and future palette support.
+
+	· Width=(640).  Select a screen width in pixels.
+
+	· Height=(200).  Select a screen height in pixels.
+
+	· Font=(IBM.font, Venus.font).  Select a PC-compatible font.  If
+	  this option is missing, an ASL font request will prompt you for
+	  an appropriate font.
+
+	· Size=(8).  Select a point size compatible with the typeface.
+
+	Please note that you are only allowed one option within the
+enclosed parenthesis.  When editing your choice, remove the parenthesis as
+well, i.e., RPG=BBS.
+
+	The index files:  USERID.index, USERLEVEL.index, USERNAME.index,
+will be re-built from the USER.master, if the server was not properly
+shutdown or if any of the indices were missing.
+
+
+                                  Client
+                                  ======
+
+	The client reads the project icon file supplied for Tool Type
+options, i.e., Local.info or Modem#1.info, when double-clicked from
+Workbench or passed as a CLI-argument.  To modify these options, click on
+the project icon once and press Right-Amiga I, for Workbench's Icon
+Information utility.  Once there, you can edit the following Tool Types:
+
+	· TITLE=(Client description).  Enter any text to appear in the
+	  client's window bar, for example, the telephone number of the
+	  line used by its modem.
+
+	· FONT=(IBM.font, Venus.font).  Select a PC-compatible font.
+
+	· SIZE=(8).  Select a point size compatible with the typeface.
+
+	· DEVICE=(LOCAL, serial.device).  Select the serial-device software
+	  driver to use or LOCAL if this client is to run from the local
+	  keyboard only.
+
+	· UNIT=(0-255).  Select the device number to be used, typically 0
+	  for the internal serial interface.
+
+	· BAUD=(300-?).  Enter the baud rate to set this client's modem as.
+	  If the baud rate is set to 9600 or higher, it will not change
+	  regardless of the connected carrier rate.  Only for settings up
+	  to 2400 baud will it adapt to the remote user's modem rate.
+
+	· INIT=(AT-command string).  This modem command string is sent
+	  after the line has been initialized.  An example may be ATMS0=1
+	  to instruct the modem to shutoff its internal speaker and to
+	  answer the phone on the first ring.
+
+	· QUIT=(AT-command string).  This modem command string is sent
+	  after the client has been instructed to shutdown.  An example may
+	  be ATZ to initialize the modem back to its default settings.
+
+	· AREACODE=(###).  This is your local area code number.  It is the
+	  supplied default whenever a new user does not specify one in
+	  their telephone number prompts.
+
+	· CALLBACK=(0, 1, 2).  This is the call-back verify level
+	  indicator.  0=none, 1=local calls only, 2=any.
+
+	· CALLERID=(0, 1, 2).  This is the caller id level indicator.
+	  0=none, 1=result returned is in NMBR=########## format, 2=result
+	  is in hexadecimal format.  Caller ID is an optional service your
+	  telephone company may offer.  Further, your modem hardware must
+	  be equipped with caller id capability.
+
+	· DELAY=(# of minutes).  This is a fairness count of how many
+	  minutes a player must wait between calls.  This helps prevent a
+	  user from hogging the line.
+
+	· OFFSET=(# of rows).  This is the number of rows you want the
+	  client window to be placed from the top of the server screen.
+
+
+                                   Sysop
+                                   =====
+
+	This utility can only operate while the server is running.  It
+allows you to further customize the BBS/DOOR and edit any player's record.
+Accessing its options is by use of pull-down menus.

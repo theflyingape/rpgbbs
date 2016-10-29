@@ -1,0 +1,9 @@
+#pragma libcall NoisyBase LoadSound 1E 0802
+#pragma libcall NoisyBase UnLoadSound 24 001
+#pragma libcall NoisyBase CreateSound 2A 10803
+#pragma libcall NoisyBase DeleteSound 30 001
+#pragma libcall NoisyBase PlaySound 36 001
+#pragma libcall NoisyBase SetPeriod 3C 1002
+#pragma libcall NoisyBase SetVolume 42 1002
+#pragma libcall NoisyBase SetCycles 48 1002
+#pragma libcall NoisyBase PanicRecovery 4E 0

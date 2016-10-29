@@ -1,0 +1,23 @@
+/* "rpgbbs.library"*/
+#pragma libcall RPGBase GetSystemDate 1e 801
+#pragma libcall RPGBase GetSystemTime 24 801
+#pragma libcall RPGBase jdate 2a 0802
+#pragma libcall RPGBase fdate 30 0802
+#pragma libcall RPGBase ftime 36 9802
+#pragma libcall RPGBase julian 3c 9802
+#pragma libcall RPGBase gold 42 9802
+#pragma libcall RPGBase phone 48 801
+#pragma libcall RPGBase proper 4e 801
+#pragma libcall RPGBase cuss 54 801
+#pragma libcall RPGBase current 5a 801
+#pragma libcall RPGBase scroll 60 0802
+#pragma libcall RPGBase DecodeANSI 66 9802
+#pragma libcall RPGBase DrawCursor 6c 0802
+#pragma libcall RPGBase input 72 10A9805
+#pragma libcall RPGBase output 78 9802
+#pragma libcall RPGBase plot 7e 10803
+#pragma libcall RPGBase OpenConsole 84 801
+#pragma libcall RPGBase CloseConsole 8a 801
+#pragma libcall RPGBase WriteConsole 90 9802
+#pragma libcall RPGBase WriteSerial 96 9802
+#pragma libcall RPGBase SendPXL 9c 9802

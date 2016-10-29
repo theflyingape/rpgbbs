@@ -1,0 +1,24 @@
+************  This system subscribes to Caller ID.  Your logon was not
+*  [1mNOTICE[m  *  identified by this system from the local telephone company.
+************  Identification is required for [1;5mNORMAL[m use of this system.
+
+You may have enabled Call or Line Blocking to prevent identification.  By
+prefixing the dialed number with *67 (tone) or 1167 (rotary/pulse), you
+intentionally prevented transmittal of the origin of this call.  For
+example, you dialed:  [1mATDT *67,738-1437[m.
+
+Or, you may have Line Blocking and did NOT prefix the dialed number with
+*82 (tone) or 1182 (rotary/pulse).  You will need to change your dialing
+command to:  [1mATDT *82,738-1437[m.
+
+Although you are going to be allowed to continue registration, all users
+are required to provide positive identification of origin before normal
+access can be granted to this computer bulletin board system.
+
+Please be assured that ALL personal information filed by this system is
+used solely by the System Operator (SYSOP) and is kept strictly
+confidential from both commercial and public uses.
+
+If you still feel the need to protect your telephone number, please do NOT
+continue with registration and hangup your modem phone line now.  Your
+wish for privacy is respected.

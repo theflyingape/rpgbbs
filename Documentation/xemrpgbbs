@@ -1,0 +1,23 @@
+xemrpgbbs.library
+=================
+This file should reside in your LIBS:  directory as shown above.  The
+filename is case sensitive, so keep the name in lowercase.
+
+Using it with Term is a snap, just select menu option Settings - Terminal
+and change the Emulation mode to External.  Select xemrpgbbs.library!
+
+What this does is gives you both DEC-VT220 and IBM-PC ANSI emulation at the
+same time _with_ a special protocol for handling bit-mapped graphics over
+the telephone lines.  RPGBBS, aka Hack & Slash, sends such files.
+
+In the future, their will be special support for 256-color graphics and
+sound.
+
+Known Glitch?
+=============
+You can change the font name/size using Settings - Emulation.  Although it
+saves any changes to ENV: & ENVARC:, point size changes will not take
+effect immediately.  The xem closes the font and re-opens the new size, but
+for whatever reason, it is not apparent on the screen.  Either type "avail
+flush" at a CLI-prompt to remove unused fonts/libraries or reboot the
+machine.  Go figure.

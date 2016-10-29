@@ -1,0 +1,182 @@
+      --------------
+--=:)) RPGBBS DELUXE ((:=--
+      --------------
+First release: March 5, 1995
+Final release: September 25, 1996
+
+    This is a standalone BBS and a CLI-door program to play a Role Playing
+Game.  It is a very addicting game to those people who are familiar with
+D&D style of play.  User interaction, mixed with intelligent computer
+opponents, makes this BBS unique and popular to call.  Everyone gets tired
+of message bases, networks, nodes, file uploads & downloads.  Most people
+want fun from their computers.  Why not play games with other people?  Let
+your keyboard be your joystick and your modem be your game cartridge!  Go
+kill a monster or another user.  Joust for gold and glory.  Rob another
+user.  Pick pockets in the Square.  Buy a naval warship and hunt sea
+monsters or sink another user's ship.  Create a gang of users to party
+against another gang or the fearful Monster Mash.  Drop into a dungeon and
+explore your way to fortune & glory.  Or, drink beer in the Tavern and
+start a brawl amongst the other players.  Sure, there is even E-mail and
+message bases for communicating and posting, but the real fun is beating up
+players, taking their possessions, and hoarding gold!  This version is
+fully playable.
+
+    RPGBBS Deluxe can run using any Commodore Amiga 2.04+ OS with 1meg RAM
+(more RAM is required for multi-node use), a hard disk, and any Hayes-
+compatible modem.  It was developed on an Amiga 3000T (WB3.1), 18meg RAM,
+Picasso-II (incredible!), A2232 serial card, and a SupraFAXmodem 14.4k.
+RPGBBS Deluxe supports 99 levels, unlimited users & gangs, and 16-clients.
+Up to 20-message bases hold last 100 posts.  Up to 16-file areas for
+transfers using xpr-shareable libraries for protocol compatibility.  The
+software multitasks very well, as it is event-driven and demands very
+little CPU power at a clip.  The program was written in SAS/C v6.56.
+
+
+To configure RPGBBS Deluxe:
+
+    Copy the IBM and/or Venus font to your System FONTS directory.  This font
+    is necessary for the local, custom screen in BBS mode.
+
+    Copy btree.library and rpgbbs.library to your System LIBS: directory.
+
+    RPGBBS.hof & RPGBBS.hol files contain Hall Of Fame & Lame information
+    for top-notch users.  If this file does not exist, a new one gets
+    created and initialized.
+
+    USER & GANG files get initialize as necessary.
+
+    From the CLI:
+    * 1> RPGBBSserver ;boots write daemon to allow multi-user access
+    * 1> Run >NIL: RPGBBSclient Modem#1 ;name of Icon for ToolType arguments
+    * 1> Run >NIL: RPGBBSclient LOCAL ;runs local node
+    * 1> RPGBBSclient "User Name" ;runs CLI-door mode with unique username
+
+    From the Workbench:
+    * Double-click the RPGBBSserver icon
+    * Duplicate Modem#1 icon as necessary per phone line(s) you have (up to 16)
+    * Get Icon Information for each Modem icon and edit its Tool Types to suit
+      the modem type
+    * Double-click each Modem Icon to boot
+    * Double-click the Local Icon, if memory permits
+
+    Workbench Tool Types:
+
+    RPGBBSserver:
+
+    * RPG=(BBS,DOOR) determines if the Server will be used primarily as a 
+      standalone BBS with a custom screen or as a CLI-door with NO server 
+      screen.  You can run it as both, with another BBS running on one 
+      modem line using RPGBBSclient as a DOOR and running RPGBBSclient on 
+      another modem line as a dedicated BBS.
+
+    * MODE=screen-mode-id
+      This Tool Type gets created via an ASL screen mode request.
+      Delete this item to get prompted for a list of valid screen modes.
+
+    * DEPTH=pixels determines screen depth (default is Workbench width).
+      This Tool Type gets created via a screen mode request.  Depth should be
+      3 (8-color), 4 (16-color), 5 (32-color), or 8 (256-color).
+
+    * WIDTH=pixels determines screen width (default is Workbench width).
+
+    * HEIGHT=pixels determines screen height (default is Workbench height).
+
+    * FONT=venus.font (default)
+      This Tool Type gets created via an ASL font request.
+      Delete this item to get prompted for a list of valid fonts.
+
+    * SIZE=point determines the font size selected (8-32).
+
+    RPGBBSclient:
+
+    * TITLE=description is displayed in the console window's title bar.
+
+    * DEVICE=serial.device selects the software driver suited for your modem.
+      The default is Commodore-supplied in your DEVS: directory.
+
+    * UNIT=0 selects which device unit number, for multiple line modems.
+
+    * BAUD=##### defines the maximum baud rate supported by your modem.  If it
+      is set greater than 2400, then it will lock-in at that rate and assumes
+      the modem will negotiate the carrier rate.  300-1200-2400 will change to
+      `CONNECT'ed baud rate.  Connected baud values less than or equal to 75
+      are ignored.
+
+    * INIT=string will get sent to modem before every logon.
+
+    * QUIT=string will get sent to modem upon quitting the program.
+
+    * AREACODE=### is your local area code number
+
+    * AUTO=# is the level of Auto-verify you want allowable.  1=local callback
+      only, 2=local & toll, 3=local & toll & long distance.  An area code that
+      equals 900 is ignored (I wonder why?).
+
+    * CALLBACK=# determines if call-back verification should take place.  A
+      value of 0=none, 1=local call-backs only, 2=any call-back allowed.
+
+    * CALLERID=# interprets your modem responses to Caller ID, a telephone
+      service.  0=not supported, 1="NMBR = ##########", 2=hex-string
+
+    * DELAY=### is a set amount of minutes between calls the same user is NOT
+      allowed to logon.  This allows other players a chance to logon, to avoid
+      hogging.
+
+    * FONT=venus.font (default) or IBM.font.
+
+    * SIZE=8 (default) or any other valid point size for that typeface.
+
+    * OFFSET=# is the number of rows to offset the from the top of the screen.
+
+    A sample script, RPGboot, is provided for you to edit and add to your
+Startup-Sequence or move it into your WBStartup drawer.
+
+
+*NOTE:	Pressing the HELP key while a user is online jumps into CHAT mode.
+	Press HELP again to resume game play.
+
+
+      ---------------------------
+--=:)) TO REGISTER RPGBBS DELUXE ((:=--
+      ---------------------------
+    There is no longer any registration fee.  The file RPGBBS.license allows
+full use -- Happy Hunting!  Please forward any inquiries to:
+
+	Robert Hurst
+	11 Patricia Court
+	Warwick, RI  02889
+
+	RPGBBS:	(401) 738-1437
+	E-mail:	r_hurst@loa.com
+
+
+      ----------
+--=:)) H&S DOOR ((:=--
+      ----------
+    Those of you still registering the original door version (v2.2a) may
+direct your mail/inquiries to:
+
+	Mark Montminy
+	30 George Ide Drive
+	S. Attleboro, MA  02703
+
+	BBS:	(508) 399-7536
+	E-mail:	markm@dev.cdx.mot.com
+
+
+                                ----------
+                         --=:)) DISCLAIMER ((:=--
+                                ----------
+Micro  Wave  Software/Robert  Hurst  ("MWSOFT")  make no warranties, either
+expressed or implied, with respect to the information and computer software
+described  herein,  it's  quality, performance, merchantability, or fitness
+for  any  particular  purpose.  Such computer software and documentation is
+provided  on  an  "AS  IS"  basis.  The entire risk as to their quality and
+performance  is  with the LICENSEE.  Should the information and/or computer
+software  prove  defective,  the  LICENSEE  (and  not  the creator, MWSOFT)
+assumes  the entire cost of all necessary damages.  In no event will MWSOFT
+be  liable  for  direct,  indirect,  incidental  or  consequential  damages
+resulting  from any defect in the information and computer software even if
+it  has  been advised of the possibility of such damages.  Some laws do not
+allow  the exclusion of implied warranties or liabilities for incidental or
+consequential damages, so the above limitation or exclusion may not apply.

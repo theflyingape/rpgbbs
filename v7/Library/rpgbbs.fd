@@ -1,0 +1,27 @@
+* "rpgbbs.library"
+##base _RPGBase
+##bias 30
+##public
+GetSystemDate(result)(a0)
+GetSystemTime(result)(a0)
+jdate(result,days)(a0,d0)
+fdate(result,days)(a0,d0)
+ftime(result,time)(a0,a1)
+julian(result,str)(a0,a1)
+gold(result,str)(a0,a1)
+phone(str)(a0)
+proper(str)(a0)
+cuss(str)(a0)
+current(con)(a0)
+scroll(con,l)(a0,d0)
+DecodeANSI(con,str)(a0,a1)
+DrawCursor(con,sw)(a0,d0)
+input(con,buffer,source,num,timeout)(a0,a1,a2,d0,d1)
+output(con,str)(a0,a1)
+plot(con,row,col)(a0,d0,d1)
+OpenConsole(con)(a0)
+CloseConsole(con)(a0)
+WriteConsole(con,str)(a0,a1)
+WriteSerial(con,str)(a0,a1)
+SendPXL(con,str)(a0,a1)
+##end

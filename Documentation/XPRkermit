@@ -1,0 +1,257 @@
+				XPR Kermit 
+			    Version 1.5 - RELEASE
+
+	               Marco Papa - Felsina Software
+		   Stephen R. Walton, Cal State Northridge
+
+This is a beta version of an External Protocol (XPR) library for the Kermit
+file transfer protocol.  In keeping with the Kermit documents, here is a
+list of the items supported and not supported.
+
+XPR Kermit Capabilities At A Glance:
+
+  Local operation:                   Yes
+  Remote operation:                  No
+  Login scripts:                     *
+  Transfer text files:               Yes
+  Transfer binary files:             Yes
+  Wildcard send:                     Yes
+  File transfer interruption:        Yes
+  Filename collision avoidance:      No
+  Can time out:                      Yes
+  8th-bit prefixing:                 Yes
+  Repeat count prefixing:            Yes
+  Alternate block checks:            Yes
+  Terminal emulation:                *
+  Communication settings:            Yes
+  Transmit BREAK:                    *
+  Support for dialout modems:        *
+  IBM mainframe communication:       *
+  Transaction logging:               No
+  Session logging (raw download):    No
+  Debug logging:                     No
+  Packet logging:                    No
+  Act as server:                     No
+  Talk to server:                    Yes
+  Advanced server functions:         No
+  Local file management:             *
+  Command/Init files:                *
+  UUCP and multiuser line locking:   *
+  Long packets:                      Yes
+  Sliding Windows:                   No
+  File attributes packets:           No
+  Command macros:                    *
+  Raw file transmit:                 *
+
+The items marked with a '*' above are those which are to be provided by the
+calling terminal emulation program.
+
+I. Introduction
+---------------
+
+XPR Kermit implements the Kermit file transfer protocol in the form of an
+Amiga External Protocol (XPR) library.  This allows the addition of an
+up-to-date version of the Kermit protocol to any communications program
+which supports the XPR specification.  For further information on Kermit,
+read the book "Kermit:  A File Transfer Protocol" by Frank da Cruz, 1986,
+Digital Press.
+
+To install XPR Kermit, simply copy the file "xprkermit.library" to your
+LIBS: directory, and request your comm program to use XPRKERMIT as its
+external file transfer protocol.
+
+XPR Kermit supports Version 2.0 of the XPR Protocol specification.  For
+more details on this, I recommend that you find a copy of the XPR Zmodem
+library, version 2.0.  Its documentation contains a good deal of the
+justification and philosophy of external protocol libraries, which I
+won't repeat here.
+
+II. Use
+-------
+
+XPR Kermit supports the parts of the Kermit protocol outlined in the table
+above.  There are currently seven user-settable parameters in XPR Kermit,
+which cover the parameters which are most often necessary to customize.
+If your communications problem is especially severe--for example, your
+method of connection to another system swallows characters which are special
+to Kermit, such as '#' or '&'--you may need to get a copy of the stand-alone
+Kermit program, C Kermit for the Amiga, distributed via many paths.
+
+There are actually two sets of "setup" parameters in XPR Kermit.  The first
+set are commands which XPR Kermit can send to a remote Kermit server. These
+are not actually setups, but are in fact commands to XPR Kermit which cause it
+to communicate with a remote Kermit server.  The fourth command in this group
+is "Change Options," which causes no communication.  Instead, you are
+requested for changes in the current values of the parameters which Kermit
+will use for communication.
+
+These items can be set in one of two ways.  One method is with a simple
+character string which is sent to XPR Kermit by the comm program;  this string
+will hereafter be referred to as the "init string."  This is generally done if
+an environment variable named "xprkermit" exists and has a value, in which
+case XPR Kermit is sent the value when you first select XPR Kermit as your
+protocol.  Some comm programs also allow an initialization string to be sent
+in other ways, such as from a script; VLT, for example, has an INITXPR script
+command.  The format of this string is specified by the external protocol.
+
+The second, more elegant method, is with some type of requester or set
+of requesters.  In this case, you will be presented by your comm program
+with a set of Intuition gadgets of some type which allow the choice of
+XPR Kermit commands and the setting of the options.
+
+However, the string method has the advantage of giving one the ability to
+change external protocol settings non-interactively, such as from a script. 
+In the case of XPR Kermit, such a script can actually command XPR Kermit to
+perform communication.  One obvious use of this is to transfer an entire
+directory tree from your Amiga to a remote machine:  you can make the remote's
+Kermit a server and command it to perform the appropriate CD commands, then
+transfer files.
+
+The currently supported XPR Kermit server commands are listed below.
+The format of the init string is in parentheses, generally simply a
+single letter.
+
+    Kermit Finish (F):  Tells a Kermit server that you are done.  The
+	remote server will stop being a server.
+
+    Kermit Bye (B):  Tells a Kermit server that you are done;  the server
+	will exit and log you off the remote machine.
+
+    Kermit CD (C{dir}):  Change the default directory for files sent or
+	received by the Kermit server.  Examples of the init string would
+	be 'C/bin' or 'Cuser:[username.amiga]'.
+
+For setting options via an init string, the first character of the init
+string must be the letter O (for Options).  Following that letter can
+be one or more of the option setting formats listed bellow;  these
+can be separated by whitespace and/or commas.
+
+There are three settings which are either "yes" or "no."  Your comm program
+will give you some way of setting them interactively.  Simple button gadgets
+will be labeled "yes" and "no;"  otherwise, you may see a string gadget,
+into which you should type the word "yes" or "no" by hand.  This string is
+case-insensitive.  In the init-string, "yes" is represented by the single
+upper-case character Y.
+
+    Convert FileName (C{Y|N}):  If "yes," then incoming file names are
+	converted to a form acceptable to the Amiga.  Currently, this
+	means simply translating them to lower case.  Default "yes."
+
+    Host Server (G{Y|N}):  If "yes," then the host (remote) Kermit is
+	assumed to be in server mode.  You will be prompted for file
+	names when you request an XPR Kermit receive, and this file
+	name will be sent to the server in the form of a Kermit GET
+	command.  Default "no."
+
+    Text File (T{Y|N}):  Flags whether the incoming file is text or binary.
+	If "yes," then carriage-return/line-feed pairs in the incoming
+	packets are converted to a single line-feed before writing the
+	packet to a file, and the opposite conversion is made when a file
+	is sent to a remote system.  Default "yes".
+
+	If your communcations program supports its own text/binary flag
+	(that is, if the xpr_finfo() function exists and can tell XPR
+	Kermit whether a given file is text or binary), this option will
+	not appear.
+
+Numerical settings are as follows.  Here, the init string key letter should
+be followed by a numerical value.
+
+    Packet Length (P{length}):  The Long Packets extension to Kermit is
+	fully supported. Setting a packet length larger than 94 (the
+	default) enters long packet mode automatically.  If you use long
+	packets, it is *strongly* recommended that you use block check 2
+	or 3 (see below) if the host Kermit supports them. The current
+	limit is 1024 for XPR Kermit;  the default value is 94, the
+	longest standard Kermit packet.
+
+    Block Check (B{type}):  This can have the value of 1, 2, or 3, and
+	chooses successively more stringent types of error checking on
+	the incoming data:  6-bit checksum, 12-bit checksum, and 16-bit
+	CRC, respectively.  Default is 1 (6-bit checksum).
+
+    Timeout (O{seconds}):  The length of time XPR Kermit will wait for a
+	packet before assuming it isn't coming.  Default 5 seconds.  (The
+	O is for Out, as in TimeOut;  T is already taken by the Text flag.)
+
+     Retry Limit (R{number}):  The number of times XPR Kermit will attempt
+	to send or receive the next packet of data before quitting.  Notice
+	that if the remote end simply stops sending, a length of time equal
+	to the retry limit times the timeout will elapse before XPR Kermit
+	actually exits.  Default 10 retries.
+
+These can be mixed and matched.  For instance, to talk to a Kermit server
+with 750-byte packets, block check 2, binary files, and a 10-second timeout,
+the init string could be "OP750,B2,TN,O10".  Cryptic, but usable.
+
+III. Future Extensions
+----------------------
+
+There are several items to be added to this XPR.  In rough order of priority,
+these are:
+
+1.  Delete on error.  XPR Kermit does not delete a partial file if there
+is an error on receive.
+
+2.  A better display of the status of the file transfer.
+
+3.  Re-entrancy.  If you are one of those lucky people with multiple serial
+ports on your Amiga, then XPR Kermit will only run on one of those ports
+at a time at present.
+
+4. Speed. The book's code does a great deal of work which could be done
+quite a bit more efficiently.  Many improvements are in the current
+version of C Kermit, Columbia's version 4F(095).
+
+5.  "Real" Kermit.  At some point, XPR Kermit will, I hope, become an
+interface to Columbia University's C Kermit code.  This will allow
+XPR Kermit to always contain the latest version of the Kermit protocol,
+provided that I or someone writes the new machine-dependent functions,
+if any.
+
+Before embarking on any of the above improvements, I will be taking
+a break from this code.  When I get started again, the first order of
+business will be some code reorganization and a switch to version 5.0
+of Manx Aztec C.
+
+IV.  Other information
+----------------------
+
+The file "kermitproto.doc" describes the code contained in the file
+"kermitproto.w," which actually implements the Kermit protocol.
+
+V.  Credits
+-----------
+
+The following people had a hand in this code.  In chronological order,
+they are:
+
+-- Frank DaCruz of Columbia University, who wrote the original code and
+   published it in his book.
+-- Steve Walton of Cal State Northridge, who got Frank's code actually
+   working in the form of the original "kermitproto.w" module.
+-- Marco Papa of Felsina Software, for the first beta XPR version
+-- Steve Walton, for second and subsequent XPR Kermit's.
+
+Other acknowledgements go to Willy Langeveld for developing the XPR
+spec, and to Rick Huebner, several of whose ideas in XPR Zmodem were
+taken over into XPR Kermit by Steve Walton. Thank you all! 
+
+VI.  Gripes
+-----------
+
+The current author and babysitter of this code is:
+	Stephen Walton
+	Department of Physics and Astronomy
+	Cal State Northridge
+	18111 Nordhoff St.
+	Northridge, CA 91330 USA
+	(818) 885-2775
+
+E-mail can go to:
+	s_walton (BIX)
+	WALTON (PeopleLink)
+	ecphssrw@afws.csun.edu or swalton@solar.stanford.edu (Internet)
+
+Thanks and congratulations gratefully accepted;  bug fixes and enhancements
+even more so!

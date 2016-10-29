@@ -1,0 +1,66 @@
+xprxmodem.library -- version 34.2
+
+
+This is an XPR 2.0 implementation of the XMODEM protocol.
+
+based on bmodem: the BIX modem program by David Betz, BYTE Magazine/BIX
+		(Modified substantially by W.G.J. Langeveld for use in VLT)
+
+Source code modifications and additions needed for XPR are:
+
+	Copyright ©1990 Marc Boucher, All Rights Reserved.
+
+This software is provided "AS IS" without warranty of any kind, either
+expressed or implied, with respect to the programs described herein, their
+quality, performance, or fitness for any particular purpose.
+
+In no event will the author(s) be liable for direct, indirect, incidental,
+or consequential damages.
+
+redistribution of this software is permitted, provided that:
+
+	1. all files are included, and in their original form.
+	2. if included with a particular product (commercial or
+	   otherwise), proper credit is given to the authors in that
+	   product's documentation.
+
+By using or distributing this software, you agree to understand and accept
+the above.
+
+The desire to move the seldom used xmodem protocol out of VLT, while
+maintaining the functionality to those who needed it, motivated this
+XPR implementation.
+
+There's nothing really fancy about it.
+
+Configurable options are: Text Mode, CRC, and 1K blocks
+
+They default to "off" (T0,C0,K0).
+
+This can be overridden by a environment variable, "XPRXMODEM", containing
+a setup string, of the following format:
+
+3 fields seperated by commas. The first character of every field is the type,
+one of:
+	T (text mode), C (crc), K (1k blocks).
+
+The second char is either 0 or 1, expressing the boolean state of the
+option.
+	examples:
+
+	T0,C1,K1 --> text mode off (binary mode), crc on, 1k blocks
+
+	T1,C0,K0 --> text mode, crc off (checksum), normal 128byte blocks
+
+The user might also be prompted for such a string when XProtocolSetUp() is
+called, if the comm program does not provide the xpr_options callback
+function.
+
+If xpr_finfo is implemented in the terminal program, then it is used
+to get the file type and the Text Mode field in the setup string is
+ignored.
+
+Marc Boucher
+	Internet: marc@CAM.ORG
+	BIX: mboucher
+	Phone: +1 514 466 8932

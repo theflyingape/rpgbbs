@@ -1,0 +1,195 @@
+February 20, 1994
+
+
+These B tree functions were written allow rapid indexing to random files.
+They were the crucial element in creating the C program, Amiga Checkbook,
+published by Amiga World magazine.  B trees are balanced, multiway trees in
+which 4 keys are stored per node.  Examine the btree.h include file for the
+header and node layouts.  An example of a B tree layout when inserting keys
+a - z sequentially into an empty tree will look as follows:
+
+                                   { i r }
+
+        { c f }                    { l o }                    { u x }
+
+{ a b } { d e } { g h }    { j k } { m n } { p q }    { s t } { v w } { y z }
+
+
+This yields with a 50% packing efficiency with plenty of room for insertion
+of new keys.  As you can see, the tree is optimally balanced.
+
+In using the B tree functions, it is important to understand how to save
+the keys and later retrieve them.  Keys are fixed-length character arrays
+defined at tree creation Bcreate().  Keys are case independent when sorted
+and searched from within the tree using strnicmp().  Keys can therefore be
+NULL-terminated or not, depending upon your needs.  For example, I store
+file cursor pointers with the keys, so they index an external, random file.
+To illustrate, I setup a date.tree file indexing appointments.master file
+like this:
+
+#include <exec/types.h>
+#include <intuition/intuition.h>
+#include <btree.h>
+#include <stdio.h>
+
+struct IntuitionBase *IntuitionBase;
+
+struct B date;			/* B function structure */
+
+struct date_rec {
+    UBYTE date[9];		/* YYYYMMDD and NULL format */
+    ULONG record;		/* File cursor pointer to master */
+} date_rec;
+
+struct master_rec {
+    UBYTE name[31];		/* Person to meet */
+    UBYTE date[9];		/* Date */
+    UBYTE comment[41];		/* Free text */
+} appointment;
+
+main()
+{
+	IntuitionBase=(struct IntuitionBase *)OpenLibrary("intuition.library",0L);
+
+	Bcreate(&date,"date.tree",sizeof(struct date_rec));
+	if(date.Bstatus) {
+	    printf("Could not Bcreate()!\n");
+	    exit(TRUE);
+	}
+
+	Bopen(&date,"date.tree");
+	if(date.Bstatus) {
+	    printf("Could not Bopen()!\n");
+	    exit(TRUE);
+	}
+
+	strcpy(date_rec.date,"19900807");
+	date_rec.record=0;
+	Bstore(&date,&date_rec);
+	if(date.Bstatus)
+	    printf("Could not Bstore()!\n");
+
+	Bget(&date,&date_rec);
+	if(date.Bstatus)
+	    printf("Could not Bget()!\n");
+
+	date_rec.record=1;
+	Bupdate(&date,&date_rec);
+	if(date.Bstatus)
+	    printf("Could not Bupdate()!\n");
+
+	Bdelete(&date,&date_rec);
+	if(date.Bstatus)
+	    printf("Could not Bdelete()!\n");
+
+	Bclose(&date);
+	if(date.Bstatus) {
+	    printf("Could not Bclose()!\n");
+	    exit(TRUE);
+	}
+
+	CloseLibrary(IntuitionBase);
+}
+
+
+This simply adds, gets, updates, deletes the key "19900807" from the B tree
+file date.tree.  Please note that you MUST Bget() the key BEFORE Bupdate()
+or Bdelete can be used.  This allows duplicate keys in the tree and YOU
+control which key is to be updated/deleted.
+
+------------------
+Send inquiries to:
+------------------
+	Robert Hurst
+	11 Patricia Court
+	Warwick, RI  02889
+	BBS: (401) 738-1437
+
+
+For a good example on how to use these functions, examine the Banalyze.c
+and EditTree.c source files.
+
+Here is the list of functions in the btree.library:
+
+/***********************\
+ *  Create new B-Tree  *
+\***********************/
+void Bcreate(b,filename,kl)
+struct B *b;				/* Pointer to B structure */
+char *filename;				/* AmigaDOS filename */
+UWORD kl;				/* Maximum key length 1-65536 */
+
+/****************************\
+ *  Open B-Tree for access  *
+\****************************/
+void Bopen(b,filename)
+struct B *b;				/* Pointer to B structure */
+char *filename;				/* AmigaDOS filename */
+
+/******************\
+ *  Close B-Tree  *
+\******************/
+void Bclose(b)
+struct B *b;				/* Pointer to B structure */
+
+/*************************************\
+ *  Search B-Tree for specified key  *
+\*************************************/
+void Bget(b,key)
+struct B *b;				/* Pointer to B structure */
+char *key;				/* Key to retrieve */
+
+/******************************************\
+ *  Get next key in sequence from B-Tree  *
+\******************************************/
+void Bnext(b,key)
+struct B *b;				/* Pointer to B structure */
+char *key;				/* Next key in ascending sequence */
+
+/**********************************************\
+ *  Get previous key in sequence from B-Tree  *
+\**********************************************/
+void Bprev(b,key)
+struct B *b;				/* Pointer to B structure */
+char *key;				/* Next key in descending sequence */
+
+
+/*************************\
+ *  Add a key to B-Tree  *
+\*************************/
+void Bstore(b,key)
+struct B *b;				/* Pointer to B structure */
+char *key;				/* Key to add */
+
+/******************************\
+ *  Delete a key from B-Tree  *
+\******************************/
+void Bdelete(b,key)
+struct B *b;				/* Pointer to B structure */
+char *key;				/* Key to be deleted */
+
+/*****************************\
+ *  Update record in B-Tree  *
+\*****************************/
+void Bupdate(b,key)
+struct B *b;				/* Pointer to B structure */
+char *key;				/* Update data in key */
+
+/**********************************\
+ *  Support functions for B-Tree  *
+\**********************************/
+void Bputheader(b)
+struct B *b;				/* Pointer to B structure */
+
+void Bgetnode(b,fp,bp)
+struct B *b;				/* Pointer to B structure */
+ULONG fp;				/* File cursor position */
+UBYTE bp;				/* Load which memory node (0-2) */
+
+void Bputnode(b,fp,bp)
+struct B *b;				/* Pointer to B structure */
+ULONG fp;				/* File cursor position */
+UBYTE bp;				/* Save which memory node (0-2) */
+
+ULONG Bfree(b)
+struct B *b;				/* Pointer to B structure */

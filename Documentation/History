@@ -1,0 +1,242 @@
+      ---------
+--=:)) HISTORY ((:=--
+      ---------
+
+This file is updated whenever a major version change is made to RPGBBS.
+
+v1.00  19-Jun-1992  * Hack & Slash BBS goes online for the first time.
+
+v2.43  01-Sep-1992  * First release to Steve Hostettler of Toledo, OH.
+                    * Supports ANSI mode.  Local mode now uses console.device.
+
+v2.44  03-Sep-1992  * Purge user after # days when rerolling now works.
+                    * Log to user note when someone retreats in naval battle.
+                    * Dungeon teleport may become inoperative for that level.
+                    * Tavern brawls have two new saving throws for ducking or
+                      landing a punch with a +/-5% ratio.
+
+v3.00  18-Sep-1992  * Display initialization procedure to console.
+                    * <2400 baud users don't get the Logon file.  Really.
+                    * Added <R>eply option to Email.
+                    * Eliminated Tables.c and made Config program for more
+                      customization.
+
+v3.01  21-Sep-1992  * Escaping the dungeon when sent there by the old sea hag
+                      is not good enough.  You must now defeat the bitch in
+                      combat.  She's a level 99 God with 1/6th the hit points
+                      and she cannot teleport away.
+                    * Neptune of the Sea cannot teleport away.
+
+v3.03  23-Sep-1992  * Up to 16 Message Bases may be defined.
+                    * Added Sysop functions Bless & Curse.
+
+v4.11  21-Dec-1992  * ANSI & TeXT pictures for arena, dungeon, and players.
+                      Please add/modify your own!
+                    * You may run into an active player in the dungeon of the
+                      same level, in place of a monster.
+                    * Warning bell character is not sent to the console when a
+                      remote user logs on.
+                    * Added Sysop functions View loser log & eXterminate user.
+                      The sysop.log is useful for tracking down "chronies" who
+                      use them to augment their real characters.  There are a
+                      lot of cheaters who can't play by the rules, thus the
+                      exterminate function -- make 'em play again!
+
+v4.20  02-Jan-1993  * Dungeon size fluctuates; width 7-15, height 7-10.
+                    * Thief may surprise you in other ways than in the pocket.
+                    * "Magic Mapping" feature traces where you have been.
+                    * Wishing Well randomly appears in dungeon.
+                    * More types of potions to quaff in dungeon.
+                    * Dungeon monsters have 2 new spells: Acid rain & Curse.
+
+v5.00  14-Feb-1993  * RPGserver & RPGclient replace RPGBBS.  Multi-user is now
+                      supported!  Icon tool types replace .config file.
+                    * Increase number of users to 200 and gangs to 50.
+                    * Auto-Verify function added.  Up to 2 accounts per phone
+                      number can get verified.  "Bad" phone numbers get logged
+                      in BadPhone.list to mark unwanted dialbacks.
+                    * Money format default replaces scientific format.  Now
+                      display gold in platinum, gold, silver, & copper pieces
+                      format.
+                    * <M>ost Wanted list added to Party option.
+                    * <Y>our character statistics has been redesigned.
+                    * Gambling Casino now has <S>lots.
+                    * Added four more default classes: Beast, Lizard, Rogue,
+                      and Undead.
+                    * Buying poison only lists those vials you can afford + 1.
+                    * Each class now have separate definitions for suggested
+                      ability assignments, noted feature, and maximum weapon &
+                      armor classes they can purchase in Square.
+                    * Riddle of Key sequence remains same for rolling user
+                      until it is solved to advance to Hero.  It gets reset if
+                      System Reroll or Hero does not advance to Titan.
+                    * Mollicone spell becomes Mayhem spell.  New spell Morph
+                      added.
+                    * Sysop functions <E> Send E-mail & <M> Read your mail
+                      added.
+
+v5.10  28-Feb-1993  * Pending messages between online users added.  All online
+                      users receive messages about certain events taking place
+                      from the other `lines' as they occur.
+                    * Fishing for oysters now have a cannon factor involved,
+                      so the less cannons you have, the less gold you receive
+                      for pearl/diamond.
+                    * Defense agility was not taken in account properly!
+                    * Key Hint works properly now.
+                    * Brawl algorithm calculates for character class now.
+                      This is to account for Beast & Undead class that get no
+                      + agility bonus.  Magic users (again) get screwed, but
+                      it goes with the flow.  Defense agility calculated in.
+                    * Robbing the bank properly alerts users-with-Bank-money
+                      who done it and empties their respective accounts.
+
+v5.12  14-Feb-1993  * Logon is now event-driven, not Delay()-driven.
+                    * Walking into dungeon walls causes a 1-hit point loss.
+                    * Retreat from gang shows surviving members hit points
+                      remaining.
+                    * Server correctly handles maximum online users.  Shutdown
+                      will no longer occur if any clients are still active.
+
+v5.20  04-Apr-1993  * RPGclient is now RESIDENTable.
+                    * Top 3 Immortals have their level highlighted in lists.
+                    * Added Bounty feature in Tavern.
+                    * Open screen & windows with 2.0 tags for 3d look.
+                    * Display Neptune & Sea Hag pix, like Mermaid.
+
+v5.21  01-May-1993  * Change emulation drivers to <0> ASCII, <1> VT100, and
+                      <2> ANSI 16-color.
+                    * Added DELAY=min ToolType to specify # of minutes user
+                      must wait between calls.
+                    * Delete your current RPGBBS.system so new one can be
+                      created to reserve 240-bytes to hold REASON last 3
+                      callers were logged off.
+                    * Added <Y> Your Statistics (new look) to Sysop Menu.
+
+v5.22  16-May-1993  * Updated all ANS files to 16-color.
+                    * Added KENO lottery number game to Gambling Casino.
+                    * Removed Menu drawer.  All submenus are embedded in
+                      executable and rendered to specified emulation.
+                    * Added Potion of Augment (makes you feel invincible!) and
+                      vial of crack (you think you feel invincible!).
+
+v5.40  13-Jul-1993  * Added SMASH! for very good attack hits (98%-100%).
+                    * Added EGO weapons & armors.  Only won off of creature.
+                    * If you kill your Gang Leader or he dies fighting you,
+                      you become the Gang Leader.
+                    * Added system call to rz & sz file transfer utilities to
+                      allow elementary usage of a file section.
+
+v5.41  26-Jul-1993  * Fixed potential bug when user types OFF or drops carrier
+                      in key positions within program.
+                    * Fixed potential bug when asked to `Hire a Scout' for
+                      your character statistics.
+
+v6.00  12-Aug-1993  * Wrote XPRtalk utility to replace rz & sz utilities.  Now
+                      support Xmodem, Zmodem, and Kermit xpr libraries.
+                    * Allow 15 separate file paths and 1 upload path.
+                    * Each path can hold up to 48 subdirectories.
+                    * Fixed mega-bucks bug should a user wield an ego weapon/
+                      armor and defeat any dungeon monster.
+
+v6.10  19-Aug-1993  * Added DEPTH and FONT ToolTypes.  ANSI emulation is built
+                      in, rather than using console.device as the screen
+                      driver.
+
+v6.20  20-Aug-1993  * Added <S>wear at Tiny.  Don't swear too many times!
+
+v6.40  09-Sep-1993  * Blinking cursor.
+                    * File section will determine if an associated icon on the
+                      drawer should be accessible to the user's access level.
+                    * Maximum screen rows definable per user.
+
+v6.42  26-Sep-1993  * Word-wrapped file comments.
+                    * Check gang pointers upon boot and logon for corrupt data.
+                    * Can't Swear at Tiny anymore after allowable calls.
+
+v6.43  01-Oct-1993  * Added <T>oday & <Y>esterday newspaper in Tiny's Tavern.
+                    * Rewrote Gang Wars to include class-dependent action:
+                      fighting classes hit harder, magic users cast spells,
+                      poison users may apply their ware.
+--------------
+DELUXE VERSION
+--------------
+01-Oct-1994   * Complete rewrite!  Support for Workbench 2.0+ only.  All files
+                have changed their internal structure.  Multiple sets of
+                character, weapon and armor classes.  ANSI/VT220 console
+                support for all video modes.  100% event driven.
+
+01-Nov-1994   * Illusion Spell replaces Mayhem Spell.  Added .PXL files for
+                bit-mapped graphics.
+
+01-Dec-1994   * Hack & Slash BBS goes back online.
+
+01-Jan-1995   * New Sysop utility program with GadTools interface.
+
+01-Feb-1995   * RPGBBSclient can run as a CLI-door.  RPGBBSserver has the
+                option to run without its custom screen (RPG=DOOR).  New IFF
+                sound support for chat mode and other various events.  New
+                sercon.library supports ZOOM gadget (suppress local console
+                output) for faster modem throughput.
+
+01-Apr-1995   * All executables recompiled and optimized for SAS/C v6.55.  A
+                player can no longer duck a punch and hit a dead or jailed
+                player.
+
+01-Jul-1995   * Ego Weapons & Armor.  Auto-purge added to delete players that
+                haven't called in some time.  New players must start as Novice
+                class fighters.  Morph & Disintegrate spells have swapped
+                places on spell list (#15 & #16).
+
+01-Aug-1995   * xemrpgbbs.library created for use with Term and other Amiga
+                terminal programs that support external emulation.  Emulation
+                now supports any point size, not just my wife's size (8).  New
+                rpgbbs.library completely replaces sercon.library.  Naval
+                warships cannot carry more than a full complement of cannons
+                cost -- the rest of the booty will sink to the ocean floor.
+
+01-Sep-1995   * Fixed many Enforcer-hits!  Added Iconify menu item for Modem
+                Lines; iconified clients yield faster serial ops.  Fixed bug
+                from SAS/C getft(); use AmigaDOS DateToStr().
+
+01-Oct-1995   * Money lost to another player gets applied towards his
+                outstanding loan first, the remaining balance is left in his
+                hands.  Upon first caller after midnight, server moves any
+                money in player's hands to his bank account.
+
+01-Nov-1995   * All executables recompiled and optimized for SAS/C v6.56.
+                Added extended spells to dungeon: Armor Rusting, Weapon Decay,
+                Big Blast, Mana Stealing, Life Stealing.  Player may find Wand
+                or Scroll; Spell may be taught from a Wish.
+
+01-Dec-1995   * Added Mystical Wheel of Life to Dungeon.  Only Novice Players
+                will get the dungeon prompt all the time.  Fixed extended spell
+                bugs.  A player's bounty postings get erased when that player
+                rolls.
+
+01-Jan-1996   * Messages can contain embedded ANSI sequences, i.e., \0 for
+                BLACK, \1 for RED, \2 for GREEN, \3 for YELLOW, \4 for BLUE, \5
+                for MAGENTA, \6 for CYAN, and \7 for WHITE.  Plus, \10 + color
+                #0-7 to add BOLD and/or \100 to add blink.
+
+17-Feb-1996   * Added Top 20 feature to High Score List.
+
+08-Mar-1996   * You can no longer `bump' into someone going to the Square when
+                `visiting'.  Life Stealing spell will take up to half the
+                victim's experience points away from him, but the taker may
+                only get up to their level's worth of experience (and possibly
+                go up an experience level during the battle).
+
+16-Mar-1996   * Hack & Slash BBS hits 60,000 calls made from 19-Jun-1992.
+                (~44 calls/day).  Adjustments made to class, magic, naval,
+                and weapon file sets.  Battling another user's warship may
+                result in permament hull-point loss, regardless of mounted
+                cannons.  Any gang member that teleports away during the
+                party is the same as not participating in the first place.
+                This can affect the spoils collected at the end of the fight.
+
+01-May-1996   * Added some more local, sound effects.  Sea Hag is now cursed
+                and armed with random ego items.
+
+25-Sep-1996   * Added dungeon MODs while exploring the deep, dank dungeon.
+                This release is now FREEWARE and my final release (for now).
+                Moohahahaha-ha!
