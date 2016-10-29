@@ -1,0 +1,16 @@
+;Arena monsters for RPGBBS deluxe
+;name^class^level^wc^ac^gold^heal^teleport^blast^confusion^transmute^cure^illusion^disintegrate
+
+Kobold^DUNGEON.Monster^1^SQUARE.Dagger^SQUARE.Wooden Shield^5c
+Orc^DUNGEON.Monster^3^SQUARE.Staff^SQUARE.Small Shield^50c
+Ogre^DUNGEON.Beast^5^SQUARE.Club^SQUARE.Large Shield^100c
+Gnoll^DUNGEON.Monster^7^SQUARE.Mace^SQUARE.Leather^500c
+Troglodyte^DUNGEON.Beast^9^SQUARE.Spear^SQUARE.Padded Leather^1000c
+Gargoyle^DUNGEON.Demon^12^SQUARE.Axe^NATURAL.6^10000c^N^Y
+Troll^DUNGEON.Beast^23^SQUARE.Heavy Crossbow^NATURAL.12^1s^Y
+Hydra^DUNGEON.Dragon^34^NATURAL.25^SQUARE.Dragon Scale Mail^1000s^Y^Y^Y
+Nycadaemon^DUNGEON.Demon^41^SQUARE.Staff of Striking^NATURAL.18^10g^Y^Y^Y
+Red Dragon^DUNGEON.Dragon^44^NATURAL.32^NATURAL.20^500g^Y^Y^Y
+Lich^DUNGEON.Undead^47^NATURAL.35^NATURAL.23^2500g^Y^Y^Y
+Beholder^DUNGEON.Beast^50^NATURAL.40^NATURAL.25^1p^Y^Y^Y
+Demogorgon^DUNGEON.Beast^99^SQUARE.Staff of the Magi^NATURAL.25^1000p^Y^Y^Y^Y^Y^Y^Y^Y

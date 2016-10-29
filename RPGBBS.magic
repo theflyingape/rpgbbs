@@ -1,0 +1,27 @@
+;Magic file for RPGBBSdeluxe
+;name^power^enchanted^cost^wand
+
+Strength^10^5^10c^1g
+Intellect^25^10^100c^10g
+Dexterity^50^25^1000c^100g
+Charm^75^50^10000c^1000g
+Shield^100^75^1s^1p
+Hone^250^100^10s^10p
+Heal^500^250^100s^25p
+Teleport^750^500^1g^50p
+Blast^1000^750^10g^100p
+Resurrect^2000^1000^100g^250p
+Confusion^3000^2000^50p^500p
+Transmute^4000^3000^100p^1000p
+Cure^5000^4000^500p^2500p
+Illusion^6000^5000^1000p^5000p
+Disintegrate^7000^6000^5000p^10000p
+Morph^7500^7000^10000p^25000p
+
+;extended spells for dungeon monsters & others?
+
+Armor Rusting^75^50
+Weapon Decay^100^75
+Big Blast^300^200
+Mana Stealing^400^300
+Life Stealing^500^400

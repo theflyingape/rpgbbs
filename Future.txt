@@ -1,0 +1,85 @@
+__________________________________________________________________________
+--------------------------------------------------------------------------
+
+                                The future
+
+__________________________________________________________________________
+--------------------------------------------------------------------------
+
+  The next release of LhA will be V2.00. It will contain numerous
+enhancements and new features. The release date is not set as of now, but
+expect to see it late September or early October.
+
+  Some of the new features are ...
+
+ o New compression modes. Significantly faster and more efficient. 10-200%
+   faster decompression. Intelligent modes detect data type and adjusts
+   compression parameters for optimal performance. See BenchM.txt for
+   preliminary performance figures.
+
+ o Raw disk I/O capability. Now you can archive raw disk images a la DMS,
+   or write archives directly to disks without using any filing system.
+   This coupled with the multivolume archive and catalog capability makes
+   LhA a powerful CLI-controlled backup program.
+
+ o Completely rewritten I/O routines. Now disk I/O is much more efficient
+   and faster. I/O buffers of any size allowed to cater for even the most
+   extreme user's needs. Supports archiving to tape streamers and reading/
+   writing from/to pipes. Asynchronous I/O to any device supported.
+
+ o New "virtual files", temporary files are primarily created in RAM, and
+   if the file does not fit entirely in RAM, it will be continued on
+   another device. Convenient when archiving or updating extremely large
+   files/archives.
+
+ o Localization. The programs can be made to output strings in various
+   languages through use of the new WB2.1 locale.library
+
+ o Support for new file systems. Supports all CBM supplied filesystems.
+
+ o Entirely new multivolume archive handling. More flexible and easier to
+   use. Supports writing to several different devices in succession
+   (cyclic). For example DF0->DF1->DF3->DF0->DF1 and so on ...
+
+ o Link support. Both hard and soft.
+
+ o Logging. All actions can be logged. Adjustable verbosity level.
+
+ o More powerful and flexible command line parsing. Different environment
+   variables for different commands possible.
+
+ o GUI preferences editor to configure all options more easily.
+   [KickStart 2.04 and later only].
+
+ o Encryption and autoverification.
+
+ o New commands and options to make handling of multivolume archives etc.
+   easier.
+
+ o Network support.
+
+ o Significantly faster and more flexible in general.
+
+ o LZ, LhArc and old-LhA front-ends to make switching from obsolete
+   archivers easier (translates command-lines to LhA 2.00 format).
+
+ o New and improved documentation.
+
+  Furthermore, some time after the release of LhA V2.00, LhI will be
+available. LhI is a window-driven archiver for KickStart 2.04 and up ONLY.
+More details later.
+
+  SUPPORT:
+
+  By the time of LhA V2.00's release there will be several LhA support
+centers around the world which will accept registrations, distribute and
+provide technical support. Current plans are for Germany, USA, Canada,
+Australia and possibly a few more. More about this when V2.00 is finally
+released.
+
+  In the meantime... Have fun!
+
+  Regards,
+            Stefan
+__________________________________________________________________________
+--------------------------------------------------------------------------

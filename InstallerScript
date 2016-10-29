@@ -1,0 +1,329 @@
+;$VER: RPGBBS Deluxe Installer v1.0 (28 Jan 1995)
+
+(set true 1)
+(set false 0)
+(set quote "\"")
+(set nothing "")
+(set WB2 (< 2293760 (getversion "exec.library" (resident)))) ; true if under 2.0
+
+(set fonts_dir (getassign "FONTS"))
+(set libs_dir (getassign "LIBS"))
+(set RPGBBS_dir (getassign "RPGBBS"))
+
+(set Src_RPGBBS "RPGBBS Install:RPGBBS/")
+(set Src_Libs "RPGBBS Install:Libs/")
+(set Src_Fonts "RPGBBS Install:Fonts/")
+(set Src_Pix "RPGBBS Pix:Pix/")
+(set Src_Docs "RPGBBS Extra:Documentation/")
+(set Src_Help "RPGBBS Extra:Help/")
+(set Src_Menu "RPGBBS Extra:Menu/")
+(set Src_Sounds "RPGBBS Extra:Sounds/")
+(set Src_Mods "RPGBBS Mods:")
+
+(complete 2)
+
+; ask user to locate FONTS: directory
+
+(set Fonts_dir
+     (askdir
+          (prompt "Please locate your FONTS: directory")
+          (help @askdir-help)
+          (default fonts_dir)
+          (newpath)
+     )
+)
+
+(complete 5)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied into your FONTS: directory:")
+     (help "\n\n\n\n\nThis will copy over any fonts needed for the "
+     "BBS.\n\n\n\n\n\n\n"
+     @copyfiles-help)
+     (source Src_Fonts)
+     (dest fonts_dir)
+     (pattern "(#?)")
+     (fonts)
+     (confirm)
+)
+
+(complete 8)
+
+; ask user to locate LIBS: directory
+
+(set libs_dir
+     (askdir
+          (prompt "Please locate your LIBS: directory.")
+          (help @askdir-help)
+          (default libs_dir)
+          (newpath)
+     )
+)
+
+(complete 10)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied into your LIBS: directory:")
+     (help "\n\n\n\nThis will copy the B-tree, RPGBBS, Serial-Console, "
+     "and XPR libraries into your system's LIBS: directory.\n\n\n\n"
+     @copylib-help)
+     (source Src_Libs)
+     (dest libs_dir)
+     (pattern "(#?.library)")
+     (confirm)
+)
+
+(complete 15)
+
+(if  (<> RPGBBS_dir nothing)
+     (if  (askbool
+               (prompt "\n\n\nSome version of RPGBBS Deluxe software "
+               "already exists in your drawer named: \n\n"
+               quote RPGBBS_dir quote
+               "\n\nDo you want the update installed over it?")
+               (help
+               "\n\n\nThe installer has determined that you already have a "
+               "some version of RPGBBS Deluxe software installed on your "
+               "If this is wrong or you want the update installed elsewhere, "
+               "select 'NO', otherwise select 'YES'."
+               )
+               (default 1)
+          )
+               (set is_update true) 
+
+;else ask where to put software
+
+          (
+               (set is_update false)
+               (set RPGBBS_dir
+               (askdir
+                    (prompt "Where would you like the updated software "
+                    "installed?\n"
+                    )
+                    (help @askdir-help)
+                    (default @default-dest)
+               )
+               )
+
+               (set RPGBBS_dir
+               )
+
+               (makedir RPGBBS_dir
+               (infos)
+               )
+          )
+     )
+)
+
+; RPGBBS: was not previously assigned, so ask where to make it
+(if  (= RPGBBS_dir nothing)
+          (
+          (set RPGBBS_dir
+               (askdir
+                    (prompt "Where would you like the software installed? "
+                    "'RPGBBS' will be automatically appended.")
+                    (help @askdir-help)
+                    (default @default-dest)
+               )
+          )
+
+          (set RPGBBS_dir
+          (tackon RPGBBS_dir "RPGBBS")
+          )
+
+          (makedir RPGBBS_dir
+          (infos)
+          )
+     )
+)
+
+(complete 20)
+
+(copyfiles
+     (prompt "Select file(s) to be copied to RPGBBS directory:")
+     (help "\n\n\n\nThis will copy programs and support files.\n\n\n\n"
+     @copyfiles-help)
+     (source Src_RPGBBS)
+     (dest RPGBBS_dir)
+     (pattern "#?")
+     (confirm)
+)
+
+(complete 33)
+
+;create Pix directory
+
+(set Pix_dir
+(cat RPGBBS_dir)
+)
+(set Pix_dir
+(tackon Pix_dir "Pix")
+)
+
+(makedir Pix_dir
+(infos)
+)
+
+(complete 35)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied to Pix directory:")
+     (help "\n\n\n\nThis will copy various text, ANSI, and PXL files for "
+     "optional use.\n\n\n\n"
+     @copyfiles-help)
+     (source Src_Pix)
+     (dest Pix_dir)
+     (pattern "#?")
+     (confirm)
+)
+
+(complete 63)
+
+;create Documentation directory
+
+(set Docs_dir
+(cat RPGBBS_dir)
+)
+(set Docs_dir
+(tackon Docs_dir "Documentation")
+)
+
+(makedir Docs_dir
+(infos)
+)
+
+(complete 65)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied Documentation directory:")
+     (help "\n\n\n\nThis will copy various documentation on "
+     "RPGBBS Deluxe, History, and XPR protocols.\n\n\n\n"
+     @copyfiles-help)
+     (source Src_docs)
+     (dest Docs_dir)
+     (pattern "#?")
+     (confirm)
+)
+
+(complete 68)
+
+;create Help directory
+
+(set Help_dir
+(cat RPGBBS_dir)
+)
+(set Help_dir
+(tackon Help_dir "Help")
+)
+
+(makedir Help_dir
+(infos)
+)
+
+(complete 70)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied to Help directory:")
+     (help "\n\n\n\nThis will copy various text files for "
+     "optional use.\n\n\n\n"
+     @copyfiles-help)
+     (source Src_Help)
+     (dest Help_dir)
+     (pattern "#?")
+     (confirm)
+)
+
+(complete 73)
+
+;create Menu directory
+
+(set Menu_dir
+(cat RPGBBS_dir)
+)
+(set Menu_dir
+(tackon Menu_dir "Menu")
+)
+
+(makedir Menu_dir
+(infos)
+)
+
+(complete 75)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied to Menu directory:")
+     (help "\n\n\n\nThis will copy various text files for "
+     "optional use.\n\n\n\n"
+     @copyfiles-help)
+     (source Src_Menu)
+     (dest Menu_dir)
+     (pattern "#?")
+     (confirm)
+)
+
+(complete 78)
+
+;create Sounds directory
+
+(set Sounds_dir
+(cat RPGBBS_dir)
+)
+(set Sounds_dir
+(tackon Sounds_dir "Sounds")
+)
+
+(makedir Sounds_dir
+(infos)
+)
+
+(complete 80)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied to Sounds directory:")
+     (help "\n\n\n\nThis will copy various IFF sound files for "
+     "optional use.\n\n\n\n"
+     @copyfiles-help)
+     (source Src_Sounds)
+     (dest Sounds_dir)
+     (pattern "#?")
+     (confirm)
+)
+
+(complete 90)
+
+(working omp "...Please Wait...")
+
+(copyfiles
+     (prompt "Select file(s) to be copied to Sounds directory:")
+     (help "\n\n\n\nThis will copy various MOD sound files for "
+     "optional use.\n\n\n\n"
+     @copyfiles-help)
+     (source Src_Mods)
+     (dest Sounds_dir)
+     (pattern "#?")
+     (confirm)
+)
+
+(complete 99)
+
+(message "\n\n\n\n\n\n"
+"Installation of RPGBBS Deluxe software is complete!"
+)
+
+(complete 100)
+
+(exit)

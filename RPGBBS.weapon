@@ -1,0 +1,79 @@
+;Weapon Classes for RPGBBS deluxe
+;*ORIGIN
+;Name^Value^Class^hit,smash,stab,plunge into^ego-class^ego-melee^ego-magic^ego-bearer^ego-curse
+
+*SQUARE
+Hands^0c^0^slap,head-butt,punch,tear into
+Dart^1c^1^prod,stick,puncture,plunge into
+Sling^2c^2^shoot,slam,pelt,plunk
+Dagger^5c^3^cut,slash,stab,plunge into
+Staff^10c^4^hit,strike,ram,plunk
+Club^25c^5^hit,ding,pummel,plunk
+Hammer^50c^6^hit,hammer,pummel,nail
+Mace^100c^7^hit,ding,pummel,plunk
+Flail^250c^8^flog,thrash,pelt,lash into
+Spear^500c^9^poke,stick,stab,plunge into
+Axe^1000c^10^cut,hack,chop,bury
+Harpoon^2500c^11^shoot,bulls-eye,perforate,whale into
+Short Bow^5000c^12^shoot,bulls-eye,pierce,perforate
+War Hammer^10000c^13^hit,hammer,pummel,nail
+Battle Axe^25000c^14^cut,hack,chop,bury
+Light Crossbow^50000c^15^shoot,bulls-eye,pierce,perforate
+Javelin^1s^16^poke,stick,stab,plunge into
+Short Sword^2s,50000c^17^hit,hack,impale,thrust into
+Long Bow^5s^18^shoot,bulls-eye,pierce,perforate
+Long Sword^10s^19^hit,hack,impale,thrust into
+Heavy Crossbow^25s^20^shoot,bulls-eye,pierce,perforate
+Scimitar^50s^21^hit,hack,slash,plunge into
+Pole Arm^100s^22^hit,whack,ram,jam
+Broad Sword^250s^23^hit,hack,impale,thrust into
+Trident^500s^24^prod,stick,puncture,plunge into
+Two-Handed Sword^1000s^25^hit,hack,impale,thrust into
+Gloves of Strength^2500s^26^punch,pound,rabbit-punch,clobber
+Dart of Homing^5000s^27^prod,stick,puncture,plunge into
+Sling of Seeking^1g^28^shoot,slam,pelt,plunk
+Dagger of Venom^2g,5000s^29^cut,slash,stab,plunge into
+Staff of Striking^5g^30^hit,strike,ram,crown
+Hammer of Throwing^10g^31^hit,hammer,pummel,nail
+Mace of Disruption^25g^32^hit,disrupt,pummel,plunk
+Axe of Hurling^50g^33^cut,hack,chop,bury
+Hammer of Thunderbolts^100g^34^hit,hammer,pummel,nail
+Axe of Lords^250g^35^cut,hack,chop,bury
+Crossbow of Distance^500g^36^shoot,bulls-eye,pierce,perforate
+Sword of Quickness^1000g^37^hit,hack,impale,thrust into
+Arrows of Slaying^2500g^38^shoot,bulls-eye,pierce,perforate
+Sword of Sharpness^5000g^39^hit,hack,impale,thrust into
+Crossbow of Accuracy^1p^40^shoot,bulls-eye,pierce,perforate
+Scimitar of Speed^2p,5000g^41^hit,hack,slash,plunge into
+Sword of Wounding^5p^42^hit,wound,impale,thrust into
+Trident of Submission^10p^43^prod,stick,puncture,plunge into
+Vorpal Sword^25p^44^hit,hack,impale,thrust into
+Wand of Wonder^50p^45^jolt,amaze,stun,paralyze
+Rod of Smiting^100p^46^jolt,smite,stun,paralyze
+Sword of Life Stealing^250p^47^hit,hack,impale,thrust into
+Wand of Lightning^500p^48^jolt,zap,electrify,electrocute
+Ring of Shooting Stars^1000p^49^jolt,zap,electrify,electrocute
+Staff of the Magi^5000p^50^wound,bash,lambaste,wallop
+
+*DUNGEON
+Assassin Slayer^10p^40^hit,hack,impale,thrust into^Assassin^^^Rogue^Assassin
+Beast Slayer^100p^44^hit,hack,impale,thrust into^Beast^^^Magician^Beast
+Cursed Sword^1s^24^hit,hack,impale,thrust into^^^^^*
+Dagger of Death^10000p^60^cut,slash,stab,plunge into
+Dragon Slayer^100p^40^hit,hack,impale,thrust into^Dragon^^^Fighter^Dragon
+Flaming Arrows^1p^36^shoot,bulls-eye,pierce,perforate^Ranger^^2^Assassin
+Giant Mace^50p^39^hit,ding,pummel,plunk^Alchemist^^^Lizard^Magician
+Hammer from Hell^1p^36^hit,hammer,pummel,nail^Cleric^^^Undead^Cleric
+Holy Avenger^5000p^46^hit,hack,impale,thrust into^Undead^4^^Cleric^Undead
+Javelin of Lightning^100p^42^hit,hack,impale,thrust into^^3^^Paladin
+King of Clubs^100g^30^hit,ding,pummel,plunk^Sage^^3^Barbarian^Fighter
+Magical Quarterstaff^100p^38^hit,hack,impale,thrust into^Barbarian^2^^Jester^Barbarian
+Sceptor of the Ancients^10000p^50^hit,hack,impale,thrust into^God^^^*
+Singing Sword^500p^42^hit,hack,impale,thrust into^*^^^Bard^Alchemist
+Sun Blade^1000p^48^hit,hack,impale,thrust into^Monster^^^God^Monster
+Sword of Justice^5p^42^hit,hack,impale,thrust into^Thief^^^^Thief
+Sword of Omnipotence^50000p^64^hit,hack,impale,thrust into^*^4^4^*
+Sword of Truth^5p^42^hit,hack,impale,thrust into^Rogue^^^^Rogue
+
+*NAVAL
+Trident of Titans^10000p^56^prod,stick,puncture,plunge into

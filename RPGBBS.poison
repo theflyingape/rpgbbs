@@ -1,0 +1,18 @@
+;Poison file for RPGBBS deluxe
+
+DDT^10c^100c
+Gnat bite^100c^10000c
+Lizard Lotion^1000c^10s
+Gargoyle Surprise^10000c^100s
+Jester Pestilent^1s^1000s
+Cleric Contagion^10s^1g
+Sea Serpent Venom^1000s^10g
+Hydra Blood^1g^100g
+Assassin Delight^10g^1000g
+Apothecary Brew^100g^1p
+Dragon Virulent^1000g^10p
+Alchemist Bane^1p^100p
+Undead Molder^10p^1000p
+Slaad Secretions^100p^5000p
+Paladin Malignant^1000p^10000p
+Tear of the Sea Hag^10000p^50000p

@@ -1,0 +1,10 @@
+;Naval sea monsters for RPGBBSdeluxe
+;Name^INT^Hull^Shot^Power^Ram^Gold
+
+Mad Whale^50^250^1^125^Y^5s
+Giant Sea Turtle^60^500^1^250^Y^50s
+Sea Dragon^70^1000^2^333^Y^5000s
+Leviathan^75^2000^2^500^N^50g
+Kraken^85^2500^2^666^Y^5000g
+Oceanus^95^3000^2^1000^Y^50p
+Poseidon^99^3250^3^750^Y^1000p

@@ -1,0 +1,25 @@
+;Access levels for RPGBBS deluxe
+;name^calls^minutes^promote^verify^bulletin^file^roleplay^weekend^sysop
+
+Inactive^1^5^0^Y^N^N^N^N^N	;after n-days of not playing
+Peasant^2^10^0^Y^N^N^N^N^N	;access given to new user
+Stranger^2^10^0^Y^N^N^N^N^N	;could not complete call-verify
+Prisoner^1^5^0^N^N^N^N^N^N	;forever banned
+Serf^2^25^3^N^Y^Y^Y^N^N
+Squire^3^25^10^N^Y^Y^Y^N^N
+Knight^3^25^100^N^Y^Y^Y^N^N
+Baron^3^26^100^N^Y^Y^Y^N^N
+Count^3^27^100^N^Y^Y^Y^N^N
+Earl^3^28^100^N^Y^Y^Y^N^N
+Marquis^3^29^100^N^Y^Y^Y^N^N
+Duke^3^30^0^N^Y^Y^Y^N^N
+Warrior^2^30^0^N^Y^Y^Y^Y^N	;restricted play on weekends only
+Deputy^3^30^0^N^Y^Y^Y^N^N
+Sheriff^3^30^0^N^Y^Y^Y^N^N
+Villain^3^30^0^N^Y^Y^Y^N^N
+Champion^3^30^0^N^Y^Y^Y^N^N
+Clinician^3^30^0^N^Y^Y^Y^N^N
+Proconsul^3^30^0^N^Y^Y^Y^N^N
+Diplomat^3^30^0^N^Y^Y^Y^N^N
+Queen^3^30^0^N^Y^Y^Y^N^Y
+King^3^30^0^N^Y^Y^Y^N^Y

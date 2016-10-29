@@ -1,0 +1,18 @@
+;Security file for RPGBBS deluxe
+
+Whiskey bottle^0c
+Baseball bat^100c
+Boulder^1000c
+Fence^10000c
+Padlock^1s
+Dead bolt lock^10s
+Trip wire trap^100s
+Barbed wire fence^1000s
+Dog^1g
+Shotgun^10g
+Stone wall^100g
+Burglar alarm^1000g
+Security guard^1p
+Moat^10p
+Garrison^100p
+Magical barrier^1000p

@@ -1,0 +1,301 @@
+
+
+     
+
+
+
+
+
+
+
+
+
+
+                              LhA User License
+
+
+
+
+
+
+
+
+
+
+
+
+                         ###      ###       ######
+                          ##       ##      ###  ##
+                          ##       ##      ##  ###
+                          ##       #####   #######
+                          ##       ## ###  ##   ##
+                          ###  ##  ##  ##  ##   ##
+                         #######  ###  ### ###  ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Written by Stefan Boberg
+
+                   Copyright (c) 1991,92 by Stefan Boberg
+                             All rights reserved
+
+
+     
+
+
+                                LhA License                      Page 1
+
+
+
+
+     1 Registration       
+
+        LhA is  a  copyrighted  product that has been made available to
+     you  under  the  concept  of  "Shareware".  It has never been, nor
+     will  it  ever  be  in  the  "Public  Domain".   You are granted a
+     limited  license in order to evaluate these programs.  If, after a
+     3  or  4  week  period of evaluation, you find that LhA suits your
+     archiving needs, please register.  
+
+        IF YOU  DO  NOT  REGISTER AFTER THIS PERIOD YOU ARE NOT ALLOWED
+     TO  USE THE PROGRAM (since you obviously didn't think it was worth
+     using).  
+
+        By cooperating  with  this concept you help to ensure continued
+     development of this product.  
+
+        Registered users  will  be  shipped  a  disk  with  the  latest
+     release  version  of  LhA  together  with a keyfile. This keyfile,
+     once  copied  to your system, will disable the ShareWare reminders
+     that  always  open  when  you  start  or quit the Intuition driven
+     programs  in  the  LhA  family. The registered-user version of LhA
+     has  all  the  features  of  the  evaluation  version,  as well as
+     several  additional commands, options and features. The registered
+     version is also up to 50% faster than the evaluation version.  
+
+        Site license  information for commercial and government use can
+     be obtained directly from the author.  
+
+        No person(s)   or   businesses   other   than  the  author  are
+     authorized  to accept any registration or distribution fees in any
+     form  whatsoever,  except  as  specified  by the author.  The only
+     people  who  will  be  regarded  as registered users are those who
+     have sent SEK 100, USD 20, 25 IRC's or more to: 
+
+                               Stefan Boberg
+                             Rydsvägen 242 A:25
+                             S-58251 Linköping
+                              Sweden / Europe
+
+
+        Be sure    to    provide    me   with   your   name,   address,
+     fido-nodenumber/InterNet  address  for  filing  purposes.  If  you
+     don't  mind,  this data will be stored and processed in electronic
+     form.  There  is a sample registration form you can fill in in the
+     file "OrderForm".  
+
+        Please allow  two to eight weeks for delivery. Usually you will
+     be  sent  your registered version right away, but if a new version
+     is  near completion, I will wait until it has been finished unless
+     you explicitly tell me to send a version right away.  
+
+
+     
+
+
+                                LhA License                      Page 2
+
+
+     2 Distribution       
+
+        Basically, the  evaluation  version  of  LhA may be distributed
+     freely as long as the following conditions are met: 
+
+        The distributor  may  only  charge  a  fee  up  to the costs of
+     obtaining   a   public   domain  diskette  from  Fred  Fish.   The
+     distributor  agrees  to  cease  distributing the programs and data
+     involved  if  requested  to  do so by the author.  The distributor
+     may  only  distribute  an unmodified copy of the original program,
+     with  all  the  supplied  documentation and copyright notices left
+     intact.  
+
+        For more details, see the "License" section.  
+
+     3 Support       
+
+        If you  have  any suggestions, bug reports or questions, please
+     contact  the  author of LhA at the address given earlier or at one
+     of the electronic mail addresses below: 
+
+               InterNet: boberg@lysator.liu.se 
+               or      : lha@augs.se 
+
+               FIDONet : "Stefan Boberg" at node 2:204/404 
+
+        When sending  in  bug  reports, please state exactly under what
+     circumstances  the  bug occurred, what equipment was used and what
+     happened.   If  possible also try to give me enough information to
+     reproduce  the  bug.   It  is very difficult to find bugs when you
+     don't   know  exactly  what  happened.   Please  don't  just  send
+     messages  like  "it  can't extract files from archives sometimes",
+     that  really  doesn't  help me.  If possible, submit the offending
+     file/archive  to  me so I can test it myself, or give me a pointer
+     where I can find the archive.  
+
+     4 Program availability      
+
+        The latest  version  of  LhA  is always available for anonymous
+     FTP  at  lysator.liu.se,  in  `/pub/amiga/lha_e???.run'  - it is a
+     self-extracting  archive that should be executed from CLI or WB2.0
+     to  extract  the  contents.  It will also be available for FidoNet
+     FReq  from AUGS BBS in Linköping, Sweden, under the magic filename
+     `LHA', the Fido node number is 2:204/404.  
+
+     5 License       
+
+     1.  This  license  applies  to  the product called "LhA", a set of
+        programs  for the Commodore-Amiga computer, published by Stefan
+        Boberg  under  the  concepts of ShareWare, and the accompanying
+        documentation,  example files and anything else that comes with
+        the  original  distribution.  The  terms  "Programs"  and "LhA"
+
+
+     
+
+
+                                LhA License                      Page 3
+
+
+        below,  refer  to  this  product.  The licensee is addressed as
+        "you".  
+
+     2.  You  may  copy and distribute verbatim copies of the programs'
+        executable  code  and  documentation  as you receive it, in any
+        medium,   provided  that  you  conspicuosly  and  appropriately
+        publish  only  the  original,  unmodified  programs,  with  all
+        copyright  notices  and  disclaimers  of  warranty  intact  and
+        including  all  the  accompanying  documentation, example files
+        and anything else that came with the original.  
+
+     3.  You  may not copy and/or distribute these programs without the
+        accompanying  documentation  and  other  additional  files that
+        came  with  the  original.   You may not copy and/or distribute
+        modified versions of these programs.  
+
+     4.  You  may  not copy, modify, sublicense, distribute or transfer
+        the  programs  except as expressly provided under this license.
+        Any  attempt  otherwise to copy, modify, sublicense, distribute
+        or  transfer  the  programs  is  void,  and  will automatically
+        terminate  your  rights to use the programs under this license.
+        However,  parties  who  have  received copies, or rights to use
+        copies,  from  you  under  this  license  will  not  have their
+        licenses  terminated  so  long  as  such parties remain in full
+        compliance.  
+
+     5.  By   copying,  distributing  and/or  using  the  programs  you
+        indicate  your acceptance of this license to do so, and all its
+        terms and conditions.  
+
+     6.  Each   time  you  redistribute  the  programs,  the  recipient
+        automatically  receives a license from the original licensor to
+        copy,  distribute  and/or  use  the  programs  subject to these
+        terms   and   conditions.   You  may  not  impose  any  further
+        restrictions  on the recipients' exercise of the rights granted
+        herein.  
+
+     7.  You  may  not  disassemble,  decompile, re-source or otherwise
+        reverse engineer the programs.  
+
+     8.  You  may  use  the  programs for a period of up to 30 days for
+        evaluation.  After that, you have to register.  
+
+     9.  If  you  wish  to incorporate parts of the programs into other
+        programs, write to the author to ask for permission.  
+
+     10.  You  agree  to  cease  distributing  the  programs  and  data
+        involved if requested to do so by author.  
+
+     11.  You  may charge a fee to recover distribution costs.  The fee
+        for  diskette  distribution  may  not  be more than the cost to
+        obtain a public domain diskette from Fred Fish.  
+
+
+     
+
+
+                                LhA License                      Page 4
+
+
+     6 Disclaimer       
+
+        THERE IS  NO WARRANTY FOR THE PROGRAMS, TO THE EXTENT PERMITTED
+     BY  APPLICABLE  LAW.   EXCEPT WHEN OTHERWISE STATED IN WRITING THE
+     COPYRIGHT  HOLDERS  AND/OR  OTHER PARTIES PROVIDE THE PROGRAMS "AS
+     IS"  WITHOUT  WARRANTY  OF  ANY KIND, EITHER EXPRESSED OR IMPLIED,
+     INCLUDING,   BUT   NOT  LIMITED  TO,  THE  IMPLIED  WARRANTIES  OF
+     MERCHANTABILITY  AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE
+     RISK  AS  TO  THE  QUALITY AND PERFORMANCE OF THE PROGRAMS IS WITH
+     YOU.   SHOULD THE PROGRAMS PROVE DEFECTIVE, YOU ASSUME THE COST OF
+     ALL NECESSARY SERVICING, REPAIR OR CORRECTION.  
+
+        IN NO  EVENT  UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+     WRITING  WILL  ANY  COPYRIGHT  HOLDER,  OR ANY OTHER PARTY WHO MAY
+     REDISTRIBUTE  THE  PROGRAMS  AS  PERMITTED ABOVE, BE LIABLE TO YOU
+     FOR   DAMAGES,  INCLUDING  ANY  GENERAL,  SPECIAL,  INCIDENTAL  OR
+     CONSEQUENTIAL  DAMAGES  ARISING OUT OF THE USE OR INABILITY TO USE
+     THE  PROGRAMS  (INCLUDING  BUT NOT LIMITED TO LOSS OF DATA OR DATA
+     BEING  RENDERED  INACCURATE  OR  LOSSES  SUSTAINED BY YOU OR THIRD
+     PARTIES  OR  A  FAILURE  OF THE PROGRAMS TO OPERATE WITH ANY OTHER
+     PROGRAMS),  EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF
+     THE POSSIBILITY OF SUCH DAMAGES.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+

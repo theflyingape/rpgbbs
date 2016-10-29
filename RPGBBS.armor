@@ -1,0 +1,48 @@
+;Armor Classes for RPGBBS deluxe
+;*ORIGIN
+;Name^Value^Class^ego-class^ego-melee^ego-magic^ego-bearer^ego-curse
+
+*SQUARE
+Skin^0c^0
+Wooden Shield^5c^1
+Small Shield^10c^2
+Large Shield^50c^3
+Leather^100c^4
+Padded Leather^500c^5
+Studded Leather^1000c^6
+Ring Mail^5000c^7
+Scale Mail^10000c^8
+Chain Mail^1s^9
+Splint Mail^5s^10
+Banded Mail^10s^11
+Bronze Plate Mail^50s^12
+Normal Plate Mail^100s^13
+Field Plate Armor^500s^14
+Full Plate Armor^1000s^15
+Dancing Shield^5000s^16
+Dragon Scale Mail^1g^17
+Elfin Chain Mail^10g^18
+Minthral Plate Armor^100g^19
+Cloak of Elvenkind^500g^20
+Robe of Blending^1000g^21
+Adamantite Plate Mail^5000g^22
+Cloak of Displacement^1p^23
+Cube of Force^5p^24
+Ring of Invisibility^10p^25
+
+*DUNGEON
+Amulet of Protection^1000g^20^^3^^Sage
+Blast Shield^1000g^20^^^4
+Cloak of Wonder^1000g^20^^^^Magician
+Divine Sphere^25p^28^God^^^God^Monster
+Fleece of Gold^100g^18^Thief^^^Thief^Cleric
+Helm of Heros^5p^26^Dragon^4^^Paladin
+Holy Mail^100c^4^Undead^^^Cleric^Undead
+Magic Shield^100p^27^Sage^^3^Barbarian
+Ring of Insanity^50p^26
+Shield of Resistance^500p^25^*^4^4^*
+Shield of Vulnerability^100c^6^^^^^*
+Tan^0c^0
+
+*NAVAL
+Titanium Armor^50p^27

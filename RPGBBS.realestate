@@ -1,0 +1,18 @@
+;Real Estate file for RPGBBS deluxe
+
+Alley^0c
+Cardboard box^100c
+Cave^1000c
+Stable^10000c
+Shed^1s
+Shack^10s
+Barn^100s
+Hovel^1000s
+Cabin^1g
+Room above tavern^10g
+House^100g
+Mansion^1000g
+Tower^1p
+Castle^10p
+Palace^100p
+Fortress^1000p

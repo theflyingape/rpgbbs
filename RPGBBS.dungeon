@@ -1,0 +1,103 @@
+;Dungeon monsters for RPGBBSdeluxe
+;name^class^heal^teleport^blast^extended spells
+
+goblin^PUBLIC.fighter
+orc^PUBLIC.fighter
+kobold^PUBLIC.fighter
+hobgoblin^PUBLIC.jester
+bullywug^PUBLIC.fighter
+xvart^PUBLIC.fighter
+caveman^PUBLIC.barbarian
+norker^PUBLIC.fighter
+skeleton^DUNGEON.undead
+zombie^DUNGEON.undead^N^N^N^Y^Y
+giant centipede^DUNGEON.beast
+gnoll^PUBLIC.fighter
+stirge^PUBLIC.fighter
+troglodyte^PUBLIC.fighter
+lizard man^DUNGEON.lizard
+crabman^DUNGEON.beast^Y
+mongrelman^PUBLIC.fighter
+orgrillon^PUBLIC.barbarian
+githzerai^PUBLIC.cleric^Y
+kuo-toa^PUBLIC.cleric^Y^Y
+bugbear^DUNGEON.beast^Y
+ghoul^DUNGEON.undead^Y^Y^N^Y^Y
+ogre^PUBLIC.barbarian
+firedrake^PUBLIC.bard^Y^Y
+drow^PUBLIC.bard^Y^Y
+firenewt^PUBLIC.bard^Y^Y
+harpy^PUBLIC.fighter^N^N^N^Y^Y
+ophidian^DUNGEON.lizard
+phantom^DUNGEON.undead^Y^Y^Y^Y^Y
+worg^PUBLIC.fighter
+gargoyle^PUBLIC.fighter
+rust monster^PUBLIC.fighter^N^N^Y
+ghast^DUNGEON.undead^Y^Y^Y^Y^Y^Y
+werewolf^DUNGEON.undead^Y^Y
+owlbear^PUBLIC.fighter
+firetoad^DUNGEON.lizard
+hall hound^PUBLIC.bard^Y
+hook horror^PUBLIC.fighter
+anhkheg^PUBLIC.assassin
+githyanki^PUBLIC.cleric^Y^Y^Y
+cave bear^DUNGEON.beast^Y
+cockatrice^PUBLIC.bard^Y
+minotaur^PUBLIC.barbarian
+displacer beast^DUNGEON.beast^N^Y
+doppleganger^PUBLIC.none^Y^Y^Y
+imp^PUBLIC.bard^Y^Y^Y^N^N^Y
+quasit^PUBLIC.bard^Y^Y^Y
+ice lizard^DUNGEON.lizard
+svirfneblin^PUBLIC.fighter
+yeti^PUBLIC.fighter
+carrion crawler^PUBLIC.fighter
+manticore^PUBLIC.fighter
+troll^PUBLIC.bard^Y^Y
+wight^DUNGEON.undead^N^Y^Y^Y^Y^Y
+wraith^DUNGEON.undead^N^Y^Y^Y^Y^Y
+basilisk^PUBLIC.fighter
+wyvern^PUBLIC.barbarian
+medusa^PUBLIC.bard
+drider^PUBLIC.fighter
+ogre mage^PUBLIC.bard^Y^Y^N^N^N^N^Y
+hill giant^PUBLIC.barbarian
+tunnel worm^PUBLIC.fighter
+hydra^PUBLIC.barbarian
+mimic^PUBLIC.none^Y^Y^Y
+succubus^PUBLIC.cleric^N^N^N^N^N^N^Y
+mind flayer^PUBLIC.cleric^Y^Y^N^N^N^N^Y
+mummy^DUNGEON.undead^N^N^N^N^N^N^N^Y
+neo-otyugh^PUBLIC.barbarian
+roper^PUBLIC.fighter
+umber hulk^PUBLIC.barbarian
+pyrohydra^PUBLIC.barbarian
+will-o-wisp^PUBLIC.jester^N^Y
+vampire^DUNGEON.undead^Y^Y^N^N^N^Y^Y^Y
+ghost^DUNGEON.undead^N^Y^Y^N^N^Y^Y^Y
+dracolisk^PUBLIC.cleric^Y^Y
+naga^PUBLIC.bard
+xag-ya^PUBLIC.bard^N^Y
+xeg-yi^PUBLIC.bard^N^Y
+minor demon^PUBLIC.bard^Y^Y^Y
+green dragon^DUNGEON.dragon^N^N^Y^Y^Y^Y
+red dragon^DUNGEON.dragon^N^N^Y^Y^Y^Y
+stone golem^PUBLIC.barbarian
+nycadaemon^PUBLIC.cleric^Y^Y^Y^Y
+titan^PUBLIC.barbarian
+demilich^PUBLIC.magician^Y^Y^Y
+pit fiend^DUNGEON.beast
+lerneaen hydra^PUBLIC.barbarian
+major demon^DUNGEON.beast
+mist dragon^DUNGEON.dragon^N^Y^N^Y^Y^Y
+grey slaad^DUNGEON.lizard
+beholder^PUBLIC.cleric^Y^Y^Y^N^N^Y^Y^Y
+iron golem^PUBLIC.barbarian
+death slaad^DUNGEON.lizard
+cloud dragon^DUNGEON.dragon^N^Y^N^N^N^Y^Y
+lich^PUBLIC.sage^Y^Y^N^Y^Y^Y^Y
+elder titan^PUBLIC.barbarian
+slaad lord^DUNGEON.lizard
+demon prince^IMMORTAL.paladin^Y^Y^Y^Y^Y^Y
+arch devil^IMMORTAL.titan^Y^Y^Y^Y^Y^Y^Y
+elemental prince^IMMORTAL.god^Y^Y^Y^Y^Y^Y^Y^Y
